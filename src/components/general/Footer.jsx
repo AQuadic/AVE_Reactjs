@@ -73,7 +73,7 @@ const Footer = () => {
                                     </li>
                                     <li className="mb-4 flex items-center gap-[9px]">
                                         <img src={check} alt="Check" />
-                                        <Link to='/' >الاسئلة الشائعة</Link>
+                                        <Link to='/faqs' >الاسئلة الشائعة</Link>
                                     </li>
                                 </ul>
                             </div>

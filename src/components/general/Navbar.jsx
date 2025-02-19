@@ -54,7 +54,7 @@ const Navbar = () => {
                                 <NavLink to='/contactUs' className="block py-2 px-3 md:p-0 text-[#1E1E1E] transform  hover:text-[#D82022]  hover:underline transition-all duration-300">أتصل بنا</NavLink>
                             </li>
                             <li>
-                                <NavLink to='/' className="block py-2 px-3 md:p-0 text-[#1E1E1E] transform  hover:text-[#D82022]  hover:underline transition-all duration-300">الاسئلة الشائعة</NavLink>
+                                <NavLink to='/faqs' className="block py-2 px-3 md:p-0 text-[#1E1E1E] transform  hover:text-[#D82022]  hover:underline transition-all duration-300">الاسئلة الشائعة</NavLink>
                             </li>
 
                         </ul>
