@@ -1,5 +1,5 @@
-import Header from '../../components/general/Header'
-import Faqs from "../../components/FAQs/Faqs"
+import Header from '../components/general/Header'
+import Faqs from "../components/FAQs/Faqs"
 const FAQs = () => {
     return (
         <div>

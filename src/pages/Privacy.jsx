@@ -1,5 +1,5 @@
-import Header from '../../components/general/Header'
-import Content from '../../components/Privacy/Content'
+import Header from '../components/general/Header'
+import Content from '../components/Privacy/Content'
 const Privacy = () => {
     return (
         <dev>

@@ -1,5 +1,5 @@
-import Form from "../../components/ContactUs/Form"
-import Header from "../../components/general/Header"
+import Form from "../components/ContactUs/Form"
+import Header from "../components/general/Header"
 
 const ContactUs = () => {
     return (

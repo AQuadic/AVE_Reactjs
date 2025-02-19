@@ -1,5 +1,5 @@
-import Header from "../../components/general/Header"
-import Content from "../../components/TermsAndConditions/Content"
+import Header from "../components/general/Header"
+import Content from "../components/TermsAndConditions/Content"
 
 const TermsAndConditions = () => {
     return (
