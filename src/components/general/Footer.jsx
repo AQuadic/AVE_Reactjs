@@ -83,7 +83,7 @@ const Footer = () => {
                                 <ul className="text-white font-normal text-base">
                                     <li className="mb-4 flex items-center gap-[9px]">
                                         <img src={check} alt="Check" />
-                                        <Link to='/' >الشروط والاحكام</Link>
+                                        <Link to='/terms' >الشروط والاحكام</Link>
                                     </li>
                                     <li className="mb-4 flex items-center gap-[9px]">
                                         <img src={check} alt="Check" />

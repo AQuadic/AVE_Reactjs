@@ -5,6 +5,7 @@ import WhoWeAre from "./pages/Who we are/WhoWeAre";
 import ContactUs from "./pages/Contact Us/ContactUs";
 import FAQs from "./pages/FAQs/FAQs";
 import Privacy from "./pages/Privacy/Privacy";
+import TermsAndConditions from "./pages/TermsAndConditions/TermsAndConditions";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/contactUs" element={<ContactUs />} />
           <Route path="/faqs" element={<FAQs />} />
           <Route path="/privacy" element={<Privacy />} />
+          <Route path="/terms" element={<TermsAndConditions />} />
         </Route>
       </Routes>
     </BrowserRouter>
