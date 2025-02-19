@@ -87,7 +87,7 @@ const Footer = () => {
                                     </li>
                                     <li className="mb-4 flex items-center gap-[9px]">
                                         <img src={check} alt="Check" />
-                                        <Link to='/' >سياسة الخصوصية</Link>
+                                        <Link to='/privacy' >سياسة الخصوصية</Link>
                                     </li>
                                 </ul>
                             </div>
