@@ -1,7 +1,7 @@
-import Header from '../../components/WhoWeAre.jsx/Header'
-import AboutUs from '../../components/WhoWeAre.jsx/AboutUs'
-import OurPrinciples from '../../components/WhoWeAre.jsx/OurPrinciples'
-import OurCertificates from '../../components/WhoWeAre.jsx/OurCertificates'
+import Header from '../../components/WhoWeAre/Header'
+import AboutUs from '../../components/WhoWeAre/AboutUs'
+import OurPrinciples from '../../components/WhoWeAre/OurPrinciples'
+import OurCertificates from '../../components/WhoWeAre/OurCertificates'
 const WhoWeAre = () => {
     return (
         <div>
