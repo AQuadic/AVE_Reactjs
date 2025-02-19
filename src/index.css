@@ -3,3 +3,12 @@ body {
   font-family: "Almarai", serif;
   background-color: #fafafa;
 }
+.swiper-button-prev,
+.swiper-button-next {
+  color: #fff !important;
+  --swiper-navigation-size: 24px;
+  background-color: #d82022;
+  opacity: 90%;
+  border-radius: 50%;
+  padding: 20px;
+}

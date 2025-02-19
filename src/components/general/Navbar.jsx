@@ -12,7 +12,7 @@ const Navbar = () => {
     return (
         <div className="container mx-auto">
             <nav className="">
-                <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                <div className="max-w-screen-2xl flex flex-wrap items-center justify-between mx-auto px-4">
                     <NavLink to='/' className="flex items-center space-x-3 rtl:space-x-reverse">
                         <img src={Logo} alt="Logo" />
                     </NavLink>
@@ -34,7 +34,7 @@ const Navbar = () => {
                                 </NavLink>
 
                                 {isOpen && (
-                                    <ul className="absolute left-[-50px] top-10 mt-2 bg-white border border-gray-100 rounded-md w-40">
+                                    <ul className="absolute left-[-50px] top-10 mt-2 bg-white border border-gray-100 rounded-md w-40 z-10">
                                         <li className="px-4 py-2 hover:bg-gray-200">
                                             <NavLink to="/service1" className="block">Service 1</NavLink>
                                         </li>
@@ -48,7 +48,7 @@ const Navbar = () => {
                                 )}
                             </li>
                             <li>
-                                <NavLink to='/' className="block py-2 px-3 md:p-0 text-[#1E1E1E] transform  hover:text-[#D82022]  hover:underline transition-all duration-300">من نحن</NavLink>
+                                <NavLink to='/whoWeAre' className="block py-2 px-3 md:p-0 text-[#1E1E1E] transform  hover:text-[#D82022]  hover:underline transition-all duration-300">من نحن</NavLink>
                             </li>
                             <li>
                                 <NavLink to='/' className="block py-2 px-3 md:p-0 text-[#1E1E1E] transform  hover:text-[#D82022]  hover:underline transition-all duration-300">أتصل بنا</NavLink>
