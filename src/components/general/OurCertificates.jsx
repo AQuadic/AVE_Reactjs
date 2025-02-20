@@ -3,14 +3,14 @@ const OurCertificates = () => {
     const certificatesArray = Array(4).fill(certificates);
     return (
         <section className='container mx-auto flex flex-wrap items-center justify-between md:mt-[120px] mt-5'>
-            <div className='px-3 md:px-0'>
-                <div className='flex items-center gap-4'>
-                    <div className='w-2 h-[46px] bg-[#D82022] rounded-sm'></div>
-                    <h1 className="font-bold text-[40px] text-[#1E1E1E]">شهاداتنا</h1>
+            <div className=''>
+                <div className='flex items-center justify-center md:justify-start gap-4'>
+                    <div className='w-1 md:h-[46px] h-7 bg-[#D82022] rounded-sm'></div>
+                    <h1 className="font-bold md:text-[40px] text-xl text-[#1E1E1E]">شهاداتنا</h1>
                 </div>
-                <div className="mt-[35px] p-5 lg:px-60 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 items-center justify-center gap-12">
+                <div className="md:mt-[35px] p-5 lg:px-60 flex items-center justify-center md:gap-12 gap-2">
                     {certificatesArray.map((image, index) => (
-                        <img key={index} src={image} alt="Certificates" className="w-full max-w-[200px]" />
+                        <img key={index} src={image} alt="Certificates" className="md:w-[157px] md:h-[218px] w-[79px] h-[109px]" />
                     ))}
                 </div>
 
