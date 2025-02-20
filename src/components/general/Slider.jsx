@@ -7,10 +7,10 @@ import {
     CarouselPrevious,
 } from "@/components/ui/carousel"
 // import sliderImage1 from '../../../assets/images/sliderImage1.webp'
-import sliderImage2 from '../../../assets/images/sliderImage2.webp'
-import sliderImage3 from '../../../assets/images/sliderImage3.webp'
-import sliderImage4 from '../../../assets/images/sliderImage4.webp'
-import cart from '../../../assets/images/cart.svg'
+import sliderImage2 from '../../assets/images/sliderImage2.webp'
+import sliderImage3 from '../../assets/images/sliderImage3.webp'
+import sliderImage4 from '../../assets/images/sliderImage4.webp'
+import cart from '../../assets/images/cart.svg'
 
 const sliderImages = [
     { image: sliderImage2, title: 'سرنجة هوائية' },

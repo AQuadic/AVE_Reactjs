@@ -53,7 +53,7 @@ const Navbar = () => {
                                 {isOpen && (
                                     <ul className="absolute left-[-50px] top-6 mt-2 bg-white border border-gray-100 rounded-md w-40 z-10">
                                         <li className="px-4 py-2 hover:bg-gray-200">
-                                            <NavLink to="/service1" className="block">كبار الشخصيات</NavLink>
+                                            <NavLink to="/vip" className="block">كبار الشخصيات</NavLink>
                                         </li>
                                         <li className="px-4 py-2 hover:bg-gray-200">
                                             <NavLink to="/ambEquipmenet" className="block">تجهيز  إسعاف</NavLink>

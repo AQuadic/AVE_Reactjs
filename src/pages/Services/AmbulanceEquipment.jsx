@@ -1,7 +1,7 @@
 import Header from '../../components/general/Header'
 import header from '../../assets/images/header.webp'
 import Contetnt from '../../components/Services/AmbulancEquipment/Contetnt'
-import Slider from '../../components/Services/AmbulancEquipment/Slider'
+import Slider from '../../components/general/Slider'
 
 const AmbulanceEquipment = () => {
     return (
