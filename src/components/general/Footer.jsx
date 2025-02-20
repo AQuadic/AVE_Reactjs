@@ -14,9 +14,9 @@ const Footer = () => {
                 <div className="mx-auto w-full max-w-screen-2xl p-4 py-6 lg:py-8">
                     <div className="lg:flex xl:gap-56 lg:gap-20">
                         <div className="mb-6 md:mb-0">
-                            <a href="https://flowbite.com/" className="flex items-center">
+                            <Link to='/' className="flex items-center">
                                 <img src={Logo} alt="Logo" />
-                            </a>
+                            </Link>
                             <p className='md:w-[373px] text-base leading-6 text-white'>العربية لمعدات المركبات (AVE) هي إحدى الشركات الرائدة في مجال معدات السيارات. متخصصون في توريد سيارات الرعاية الصحية (سيارات الإسعاف ،العناية المركزة)</p>
                             <div className='flex items-center gap-3 mt-[18px]'>
                                 <Link to=''><img src={LinkedIn} className='w-8 h-8' alt="LinkedIn" /></Link>

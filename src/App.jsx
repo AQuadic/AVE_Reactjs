@@ -1,11 +1,12 @@
 import { BrowserRouter, Route, Routes } from "react-router";
 import Layout from "./components/general/Layout";
 import HomePage from "./pages/HomePage";
-import WhoWeAre from "./pages/Who we are/WhoWeAre";
-import ContactUs from "./pages/Contact Us/ContactUs";
-import FAQs from "./pages/FAQs/FAQs";
-import Privacy from "./pages/Privacy/Privacy";
-import TermsAndConditions from "./pages/TermsAndConditions/TermsAndConditions";
+import WhoWeAre from "./pages/WhoWeAre";
+import ContactUs from "./pages/ContactUs";
+import FAQs from "./pages/FAQs";
+import Privacy from "./pages/Privacy";
+import TermsAndConditions from "./pages/TermsAndConditions";
+import AmbulanceEquipment from "./pages/Services/AmbulanceEquipment";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/faqs" element={<FAQs />} />
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/terms" element={<TermsAndConditions />} />
+          <Route path="/ambEquipmenet" element={<AmbulanceEquipment />} />
         </Route>
       </Routes>
     </BrowserRouter>
