@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import "animate.css";
+
 body {
   font-family: "Almarai", serif;
   background-color: #fafafa;

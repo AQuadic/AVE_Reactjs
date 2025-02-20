@@ -16,7 +16,7 @@ const Navbar = () => {
     };
     return (
         <div className="container mx-auto">
-            <nav className="">
+            <nav className="z-10 relative">
                 <div className="max-w-screen-2xl flex flex-wrap items-center justify-between mx-auto px-4">
                     <NavLink to='/' className="flex items-center space-x-3 rtl:space-x-reverse">
                         <img src={Logo} alt="Logo" />

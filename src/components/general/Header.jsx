@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 const Header = ({ title, description, imageUrl, button }) => {
     return (
-        <div className="relative overflow-hidden">
+        <div className="relative overflow-hidden animate__animated animate__fadeIn">
             <img src={imageUrl} className="w-full h-44 md:h-full object-center object-cover" alt="Header Image" />
             <div className="absolute top-0 left-0 w-full h-full bg-[#1E1E1E99]"></div>
             <div className="absolute md:top-1/2 top-10 md:left-1/2 transform md:-translate-x-1/2 md:-translate-y-1/2 flex flex-col items-center">

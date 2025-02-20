@@ -9,7 +9,7 @@ import check from '../../assets/images/check.svg'
 import { Link } from 'react-router'
 const Footer = () => {
     return (
-        <div>
+        <div className='relative z-20'>
             <footer className="bg-[#1E1E1E] lg:h-[372px]">
                 <div className="mx-auto w-full max-w-screen-2xl p-4 py-6 lg:py-8">
                     <div className="lg:flex xl:gap-56 lg:gap-20">
