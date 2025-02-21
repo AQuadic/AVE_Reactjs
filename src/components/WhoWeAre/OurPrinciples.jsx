@@ -25,13 +25,13 @@ const OurPrinciples = () => {
     ];
 
     return (
-        <section className='container mx-auto flex flex-wrap items-center justify-between md:mt-[120px] mt-5'>
+        <section className='container flex flex-wrap items-center justify-between lg:mt-[120px] mt-5'>
             <div className='px-3 md:px-0'>
                 <div className='flex items-center gap-4'>
                     <div className='w-1 md:h-[46px] h-7 bg-[#D82022] rounded-sm'></div>
                     <h1 className="font-bold md:text-[40px] text-xl text-[#1E1E1E]">مبادئنا</h1>
                 </div>
-                <div className="md:mt-10 mt-6 flex flex-wrap gap-6">
+                <div className="md:mt-10 mt-6 flex flex-wrap justify-center gap-6">
                     {data.map((item, index) => (
                         <div
                             key={index}

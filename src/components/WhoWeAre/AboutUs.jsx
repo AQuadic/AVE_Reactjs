@@ -1,7 +1,7 @@
 import aboutusAm from '../../assets/images/aboutUsAmb.webp'
 const AboutUs = () => {
     return (
-        <section className='md:container mx-auto flex xl:flex-row flex-col items-center justify-between md:mt-[120px] mt-5'>
+        <section className='md:container mx-auto flex xl:flex-row flex-col items-center justify-between lg:mt-[120px] mt-5'>
             <div className='px-3 md:px-0'>
                 <div className='flex items-center gap-4'>
                     <div className='w-1 md:h-[46px] h-7 bg-[#D82022] rounded-sm'></div>

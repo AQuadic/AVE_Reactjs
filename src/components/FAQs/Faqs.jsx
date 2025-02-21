@@ -8,12 +8,12 @@ const Faqs = () => {
     };
 
     return (
-        <section className="container mx-auto md:my-[120px] my-10 px-3 md:px-0">
+        <section className="container mx-auto lg:my-[120px] my-6 px-3 lg:px-0">
             <div className='flex items-center gap-4'>
-                <div className='w-2 h-[46px] bg-[#D82022] rounded-sm'></div>
-                <h1 className="font-bold text-[40px] text-[#1E1E1E]">الاسئلة <span className="text-[#B1060D]">الشائعة</span></h1>
+                <div className='w-1 md:h-[46px] h-7 bg-[#D82022] rounded-sm'></div>
+                <h1 className="font-bold md:text-[40px] text-xl text-[#1E1E1E]">الاسئلة <span className="text-[#B1060D]">الشائعة</span></h1>
             </div>
-            <div id="accordion-color" className="w-full mt-10">
+            <div id="accordion-color" className="w-full lg:mt-10 mt-4">
 
                 <div className="border border-gray-200 rounded-2xl overflow-hidden">
                     <h2 id="accordion-color-heading-1">
