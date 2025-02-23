@@ -52,7 +52,7 @@ const ClientReviews = () => {
                     <h1 className="font-bold md:text-[40px] text-xl text-[#1E1E1E]">اراء <span className="text-[#B1060D]">العملاء</span></h1>
                 </div>
                 <div className="mt-10">
-                    <div className="flex flex-wrap gap-6">
+                    <div className="flex flex-wrap justify-center gap-6">
                         {reviews.map((item, index) => (
                             <Card key={index} {...item} />
                         ))}

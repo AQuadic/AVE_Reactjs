@@ -2,6 +2,7 @@ import Header from "@/components/general/Header"
 import vip from '../../assets/images/vip.webp'
 import Content from "@/components/Services/VIP/Content"
 import Slider from "@/components/general/Slider"
+import Cards from "@/components/general/Cards"
 const VIP = () => {
     return (
         <div>
@@ -13,6 +14,7 @@ const VIP = () => {
             />
             <Content />
             <Slider />
+            <Cards />
         </div>
     )
 }

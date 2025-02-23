@@ -9,7 +9,7 @@ import check from '../../assets/images/check.svg'
 import { Link } from 'react-router'
 const Footer = () => {
     return (
-        <div className='relative z-20'>
+        <div className='relative'>
             <footer className="bg-[#1E1E1E] lg:h-[372px]">
                 <div className="mx-auto w-full max-w-screen-2xl p-4 py-6 lg:py-8">
                     <div className="lg:flex xl:gap-32 lg:gap-20">
@@ -80,7 +80,7 @@ const Footer = () => {
                                     </li>
                                     <li className="mb-4 flex items-center gap-[9px]">
                                         <img src={check} alt="Check" className='md:block hidden' />
-                                        <Link to='/' >تواصل معنا</Link>
+                                        <Link to='/contactUs' >تواصل معنا</Link>
                                     </li>
                                     <li className="mb-4 flex items-center gap-[9px]">
                                         <img src={check} alt="Check" className='md:block hidden' />

@@ -22,7 +22,7 @@ const sliderImages = [
 ];
 const Slider = () => {
     return (
-        <section className='container mx-auto flex flex-wrap items-center justify-between md:my-[88px] my-5'>
+        <section className='container mx-auto md:flex hidden flex-wrap items-center justify-between md:my-[88px] my-5'>
             <div className='px-3 lg:px-0'>
                 <div className='flex items-center gap-4'>
                     <div className='w-1 md:h-[46px] h-7 bg-[#D82022] rounded-sm'></div>

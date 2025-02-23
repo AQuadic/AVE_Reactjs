@@ -14,7 +14,7 @@ const Clients = () => {
                     <div className='w-1 md:h-[46px] h-7 bg-[#D82022] rounded-sm'></div>
                     <h1 className="font-bold md:text-[40px] text-xl text-[#1E1E1E]"> عملائنا </h1>
                 </div>
-                <Carousel className="xl:w-[1200px] lg:w-[900px] md:w-[700px] w-[270px] mt-10 mx-10">
+                <Carousel className="xl:w-[1200px] lg:w-[900px] md:w-[650px] w-[250px] mt-10 mx-10">
                     <CarouselContent className="-ml-1">
                         {Array.from({ length: 10 }).map((_, index) => (
                             <CarouselItem key={index} className="pl-1 md:basis-1/1 lg:basis-1/8">

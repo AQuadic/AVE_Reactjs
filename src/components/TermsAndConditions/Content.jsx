@@ -3,8 +3,8 @@ const Content = () => {
         <section className='container mx-auto flex flex-wrap items-center justify-between md:my-[120px] my-5'>
             <div className='px-3 md:px-0'>
                 <div className='flex items-center gap-4'>
-                    <div className='w-2 h-[46px] bg-[#D82022] rounded-sm'></div>
-                    <h1 className="font-bold text-[40px] text-[#1E1E1E]">الشروط و<span className="text-[#B1060D]">الاحكام</span></h1>
+                    <div className='w-1 md:h-[46px] h-7 bg-[#D82022] rounded-sm'></div>
+                    <h1 className="font-bold md:text-[40px] text-xl text-[#1E1E1E]">الشروط و<span className="text-[#B1060D]">الاحكام</span></h1>
                 </div>
                 <div className="w-full h-full p-6 md:mt-10 mt-5" style={{ boxShadow: '0px 0px 3px 0px #00000029' }}>
                     <p className="text-[#505050] text-base">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.</p>
