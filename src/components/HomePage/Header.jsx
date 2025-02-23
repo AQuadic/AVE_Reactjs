@@ -15,7 +15,7 @@ const Header = () => {
                         <button type="button" className="lg:w-[215px] w-[160px] md:h-14 h-12 border border-[#D82022] text-[#D82022] font-bold text-lg rounded-sm">{t('buyCar')}</button>
                     </div>
                 </section>
-                <section className='relative top-[-100px] md:left-[-30px] left-[-16px] md:order-2 order-1'>
+                <section className='relative top-[-100px] md:left-[-30px] ltr:left-[-16px] md:order-2 order-1'>
                     <img src={bg} className='md:flex hidden top-0 left-44' alt="background" />
                     <img src={mobBG} className='absolute md:hidden flex top-11 left-[88px]' alt="background" />
                     <img src={car} className='top-44 md:left-0 left-36 absolute md:w-[371px] md:h-[232px] w-[134.3px] h-[84px]' alt="Car" />

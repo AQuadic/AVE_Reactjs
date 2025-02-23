@@ -122,8 +122,8 @@ const Navbar = () => {
                                 className="md:w-[125px] w-[100px] md:h-14 border md:inline-flex hidden gap-2 items-center justify-center px-4 py-2 text-lg font-bold text-[#1E1E1E] rounded-lg cursor-pointer"
                                 onClick={() => setIsOpenLang(!isOpenLang)}
                             >
-                                <img src={global} alt="Language" className="rtl:filter rtl:invert" />
-                                <p style={{ color: language === "ar" ? "white" : "inherit" }}>{language === "ar" ? "English" : "العربية"}</p>
+                                <img src={global} alt="Language" />
+                                <p style={{ color: language === "ar" }}>{language === "ar" ? "English" : "العربية"}</p>
                             </button>
 
                             {isOpenLang && (
