@@ -4,7 +4,7 @@ import ProcessStep from "./ProcessStep";
 const HowWeWork = () => {
   return (
     <section className="mx-auto flex flex-wrap items-center justify-between md:my-[120px] mt-5">
-      <div className="">
+      <div className="mx-auto">
         <div className="container flex items-center justify-center md:justify-start gap-4">
           <div className="w-1 md:h-[46px] h-7 bg-[#D82022] rounded-sm"></div>
           <h1 className="font-bold md:text-[40px] text-xl text-[#1E1E1E]">
