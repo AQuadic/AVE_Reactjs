@@ -1,3 +1,5 @@
+import { useTranslation } from "react-i18next";
+
 const ClientReviews = () => {
     const reviews = [
         {
@@ -44,12 +46,14 @@ const ClientReviews = () => {
             </div>
         );
     };
+    const { t } = useTranslation("home");
+
     return (
         <section className='container mx-auto flex flex-wrap items-center justify-between md:my-[88px] my-10'>
             <div className='px-3 lg:px-0'>
                 <div className='flex items-center justify-center md:justify-start gap-4'>
                     <div className='w-1 md:h-[46px] h-7 bg-[#D82022] rounded-sm'></div>
-                    <h1 className="font-bold md:text-[40px] text-xl text-[#1E1E1E]">اراء <span className="text-[#B1060D]">العملاء</span></h1>
+                    <h1 className="font-bold md:text-[40px] text-xl text-[#1E1E1E]"> {t('reviews')} <span className="text-[#B1060D]">{t('client')}</span></h1>
                 </div>
                 <div className="mt-10">
                     <div className="flex flex-wrap justify-center gap-6">
