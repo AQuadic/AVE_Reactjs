@@ -1,11 +1,13 @@
 import check from '../../../assets/images/red_check.svg'
+import { useTranslation } from "react-i18next";
 const Contetnt = () => {
+    const { t } = useTranslation("ambequipment");
     return (
         <section className='container mx-auto flex flex-wrap items-center justify-between md:my-[88px] mt-5'>
             <div className='px-3 md:px-0'>
                 <div className='flex items-center gap-4'>
                     <div className='w-1 md:h-[46px] h-7 bg-[#D82022] rounded-sm'></div>
-                    <h1 className="font-bold md:text-[40px] text-xl text-[#1E1E1E]">تجهيز سيارات <span className="text-[#B1060D]">الإسعاف </span>بأنواعها</h1>
+                    <h1 className="font-bold md:text-[40px] text-xl text-[#1E1E1E]">{t('carPrep')} <span className="text-[#B1060D]">{t('vip')} </span>{t('cars')}</h1>
                 </div>
                 <h3 className="md:mt-6 mt-4 font-normal md:text-xl text-base text-[#1E1E1E] leading-8">بدأنا في تجهيز سيارات الإسعاف لتطوير المجال وتجهيز أنواع مختلفة من سيارات الإسعاف لتصبح حجر الزاوية لكل من يأتي من بعدنا، وتشمل هذه الأنواع من سيارات الإسعاف:</h3>
                 <ul className='text-base font-normal text-[#505050]'>

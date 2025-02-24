@@ -11,7 +11,7 @@ import sliderImage2 from '../../assets/images/sliderImage2.webp'
 import sliderImage3 from '../../assets/images/sliderImage3.webp'
 import sliderImage4 from '../../assets/images/sliderImage4.webp'
 import cart from '../../assets/images/cart.svg'
-
+import { useTranslation } from "react-i18next";
 const sliderImages = [
     { image: sliderImage2, title: 'سرنجة هوائية' },
     { image: sliderImage2, title: 'جبيرة هوائية' },
@@ -21,12 +21,13 @@ const sliderImages = [
     { image: sliderImage4, title: 'شنطة اسعاف استانلس ' },
 ];
 const Slider = () => {
+    const { t } = useTranslation("vip");
     return (
         <section className='container mx-auto md:flex hidden flex-wrap items-center justify-between md:my-[88px] my-5'>
             <div className='px-3 lg:px-0'>
                 <div className='flex items-center gap-4'>
                     <div className='w-1 md:h-[46px] h-7 bg-[#D82022] rounded-sm'></div>
-                    <h1 className="font-bold md:text-[40px] text-base text-[#1E1E1E]"> منتجات <span className="text-[#B1060D]">ذات صلة </span></h1>
+                    <h1 className="font-bold md:text-[40px] text-base text-[#1E1E1E]">{t('relatedProducts')}</h1>
                 </div>
                 <Carousel className="w-full mt-10">
                     <CarouselContent className="-ml-1 xl:w-[1200px] lg:w-[900px] md:w-[700px] w-[300px]">

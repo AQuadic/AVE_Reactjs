@@ -11,6 +11,10 @@ import contactUsEn from '../locales/en/contactUs.json';
 import contactUsAr from '../locales/ar/contactUs.json';
 import faqEn from '../locales/en/faq.json';
 import faqAr from '../locales/ar/faq.json';
+import vipEn from '../locales/en/vip.json';
+import vipAr from '../locales/ar/vip.json'
+import ambequipmentEn from '../locales/en/ambequipment.json';
+import ambequipmentAr from '../locales/ar/ambequipment.json'
 i18n
   .use(initReactI18next)
   .init({
@@ -25,14 +29,18 @@ i18n
         home: homeEn,
         whoWeAre: whoWeAreEn,
         contactUs: contactUsEn,
-        faq: faqEn
+        faq: faqEn,
+        vip: vipEn,
+        ambequipment: ambequipmentEn,
       },
       ar: {
         navbar: navbarAr,
         home: homeAr,
         whoWeAre: whoWeAreAr,
         contactUs: contactUsAr,
-        faq: faqAr
+        faq: faqAr,
+        vip: vipAr,
+        ambequipment: ambequipmentAr,
       },
     },
   });
