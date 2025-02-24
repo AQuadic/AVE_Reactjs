@@ -3,8 +3,9 @@ import sliderImage2 from '../../assets/images/sliderImage2.webp'
 import sliderImage3 from '../../assets/images/sliderImage3.webp'
 import sliderImage4 from '../../assets/images/sliderImage4.webp'
 import cart from '../../assets/images/cart.svg'
-
+import { useTranslation } from "react-i18next";
 const Cards = () => {
+    const { t } = useTranslation("vip");
     const products = [
         {
             image: sliderImage4,
@@ -40,7 +41,7 @@ const Cards = () => {
             <div className='px-3 lg:px-0'>
                 <div className='flex items-center gap-4'>
                     <div className='w-1 md:h-[46px] h-7 bg-[#D82022] rounded-sm'></div>
-                    <h1 className="font-bold md:text-[40px] text-base text-[#1E1E1E]"> منتجات <span className="text-[#B1060D]">ذات صلة </span></h1>
+                    <h1 className="font-bold md:text-[40px] text-base text-[#1E1E1E]">{t('relatedProducts')}</h1>
                 </div>
                 <div className="my-6">
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
