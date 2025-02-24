@@ -7,6 +7,8 @@ import homeEn from "../locales/en/home.json";
 import homeAr from "../locales/ar/home.json";
 import whoWeAreEn from '../locales/en/whoWeAre.json';
 import whoWeAreAr from '../locales/ar/whoWeAre.json'
+import contactUsEn from '../locales/en/contactUs.json';
+import contactUsAr from '../locales/ar/contactUs.json'
 i18n
   .use(initReactI18next)
   .init({
@@ -20,11 +22,13 @@ i18n
         navbar: navbarEn,
         home: homeEn,
         whoWeAre: whoWeAreEn,
+        contactUs: contactUsEn
       },
       ar: {
         navbar: navbarAr,
         home: homeAr,
-        whoWeAre: whoWeAreAr
+        whoWeAre: whoWeAreAr,
+        contactUs: contactUsAr
       },
     },
   });
