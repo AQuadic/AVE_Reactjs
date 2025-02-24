@@ -3,13 +3,15 @@ import AboutUs from '../components/WhoWeAre/AboutUs'
 import OurPrinciples from '../components/WhoWeAre/OurPrinciples'
 import OurCertificates from '../components/general/OurCertificates'
 import header from '../assets/images/header.webp'
+import { useTranslation } from "react-i18next";
 
 const WhoWeAre = () => {
+    const { t } = useTranslation("whoWeAre");
     return (
         <div>
             <Header
-                title="العربية لمعدات المركبات (AVE)"
-                description="العربية لمعدات المركبات (AVE) هي إحدى الشركات الرائدة في مجال معدات السيارات. متخصصون في توريد سيارات الرعاية الصحية (سيارات الإسعاف ،العناية المركزة)"
+                title={t('headTitle')}
+                description={t('paraTitle')}
                 imageUrl={header}
             />
             <AboutUs />

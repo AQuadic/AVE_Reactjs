@@ -1,26 +1,24 @@
 import vision from '../../assets/images/Vision.svg'
 import msg from '../../assets/images/msg.svg'
 import principles from '../../assets/images/principles.svg'
-
+import { useTranslation } from "react-i18next";
 const OurPrinciples = () => {
+    const { t } = useTranslation("whoWeAre");
     const data = [
         {
             img: vision,
-            title: "الرؤية",
-            description:
-                "رؤية متطورة لسيارات المتخصصة المصممة على متن الحافلة الصغيرة، والتي تتميز بمرونة التعديل والاستغلال الأمثل للمساحات بأعلى معايير الجودة وأفضل الأسعار.",
+            title: t('title1'),
+            description: t('desc1')
         },
         {
             img: msg,
-            title: "الرسالة",
-            description:
-                "الاستفادة من قدراتنا الإنتاجية والخدمية الهائلة لتقديم حلول فريدة ومتكاملة وعالية الكفاءة. أن نصبح أفضل مورد للمنتجات والخدمات عالية الجودة.",
+            title: t('title2'),
+            description: t('desc2')
         },
         {
             img: principles,
-            title: "القيم",
-            description:
-                "العمل الجماعي من خلال الثقة والاحترام والالتزام بحماس العملاء المسائلة على جميع المستويات.",
+            title: t('title3'),
+            description: t('desc3')
         },
     ];
 
@@ -29,7 +27,7 @@ const OurPrinciples = () => {
             <div className='px-3 md:px-0'>
                 <div className='flex items-center gap-4'>
                     <div className='w-1 md:h-[46px] h-7 bg-[#D82022] rounded-sm'></div>
-                    <h1 className="font-bold md:text-[40px] text-xl text-[#1E1E1E]">مبادئنا</h1>
+                    <h1 className="font-bold md:text-[40px] text-xl text-[#1E1E1E]">{t('ourPrinciples')}</h1>
                 </div>
                 <div className="md:mt-10 mt-6 flex flex-wrap justify-center gap-6">
                     {data.map((item, index) => (

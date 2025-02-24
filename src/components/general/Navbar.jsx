@@ -66,7 +66,7 @@ const Navbar = () => {
                             <NavLink to='/' className="block py-1 px-4 md:p-0 text-xs text-[#1E1E1E] transform hover:text-[#D82022] hover:underline transition-all duration-300" aria-current="page">{t('home')}</NavLink>
                             <li className='flex items-center relative px-2' onClick={toggleDropdown}>
                                 <img src={arrow} className='w-3 h-3' alt="Arrow" />
-                                <NavLink className="block py-2 px-3 md:p-0 text-[#1E1E1E] text-sm transform hover:text-[#D82022] hover:underline transition-all duration-300">
+                                <NavLink className="block px-2 md:p-0 text-[#1E1E1E] text-sm transform hover:text-[#D82022] hover:underline transition-all duration-300">
                                     {t('services')}
                                 </NavLink>
                                 {isOpen && (
@@ -142,7 +142,7 @@ const Navbar = () => {
                             )}
                         </div>
                         <div className='w-20 h-6 bg-[#D820221A] rounded-sm md:hidden flex items-center justify-center'>
-                            <p className='text-[#D82022] font-normal text-xs'>حمل التطبيق</p>
+                            <p className='text-[#D82022] font-normal text-xs'>{t('downloadApp')}</p>
                         </div>
                     </div>
                     <div className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-language">

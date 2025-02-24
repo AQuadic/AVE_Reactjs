@@ -5,7 +5,8 @@ import navbarEn from "../locales/en/navbar.json";
 import navbarAr from "../locales/ar/navbar.json";
 import homeEn from "../locales/en/home.json";
 import homeAr from "../locales/ar/home.json";
-
+import whoWeAreEn from '../locales/en/whoWeAre.json';
+import whoWeAreAr from '../locales/ar/whoWeAre.json'
 i18n
   .use(initReactI18next)
   .init({
@@ -18,10 +19,12 @@ i18n
       en: {
         navbar: navbarEn,
         home: homeEn,
+        whoWeAre: whoWeAreEn,
       },
       ar: {
         navbar: navbarAr,
         home: homeAr,
+        whoWeAre: whoWeAreAr
       },
     },
   });
