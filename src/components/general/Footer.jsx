@@ -29,7 +29,7 @@ const Footer = () => {
                                 <Link to=''><img src={x} className='w-8 h-8' alt="x" /></Link>
                             </div>
                         </div>
-                        <div className="flex md:flex-row flex-col lg:gap-20 md:gap-5 mt-5 xl:mt-0">
+                        <div className="flex md:flex-row flex-col rtl:lg:gap-20 ltr:lg:gap-12 md:gap-5 mt-5 xl:mt-0">
                             <div className='text-center'>
                                 <h2 className="text-2xl font-semibold text-white">{t('services')}</h2>
                                 <div className='w-6 h-1 bg-[#ED1C24] rounded-sm mt-4 mb-2 mx-auto'></div>
