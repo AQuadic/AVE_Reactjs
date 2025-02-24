@@ -59,8 +59,7 @@ const Navbar = () => {
                     <div className={`fixed inset-y-0 ${isSidebarOpen ? 'left-0' : '-left-full'} bg-white w-64 md:hidden z-50 transition-all duration-300 ease-in-out`}>
                         <div className='flex items-center justify-between px-5'>
                             <img src={Logo} className='md:w-[99px] md:h-[83.97px] w-12 h-12' alt="Logo" />
-                            <img src={closeIcon} alt="Close Icon" />
-
+                            <img src={closeIcon} alt="Close Icon" onClick={toggleSidebar} />
                         </div>
                         <div className="flex flex-col gap-5 font-normal text-lg rtl:space-x-reverse">
                             <NavLink to='/' className="block py-1 px-4 md:p-0 text-xs text-[#1E1E1E] transform hover:text-[#D82022] hover:underline transition-all duration-300" aria-current="page">{t('home')}</NavLink>
@@ -109,8 +108,8 @@ const Navbar = () => {
                             <div className='px-4 flex gap-2'>
                                 <img src={sidebarMob} alt="Phone" />
                                 <div>
-                                    <p className='text-[#1E1E1E] text-xs'>حمل تطبيق العربية الان</p>
-                                    <button className='w-[113px] h-6 rounded-sm bg-[#D82022] text-white text-xs'>حمل التطبيق</button>
+                                    <p className='text-[#1E1E1E] text-xs'>{t('arabicDownload')}</p>
+                                    <button className='w-[113px] h-6 rounded-sm bg-[#D82022] text-white text-xs'>{t('downloadApp')}</button>
                                 </div>
                             </div>
                         </div>
