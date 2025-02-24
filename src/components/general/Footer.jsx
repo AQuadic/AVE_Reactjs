@@ -72,34 +72,29 @@ const Footer = () => {
                                     </div>
                                 </ul>
                             </div>
-                            <div className='flex flex-col items-center md:items-start'>
+                            <div className='flex flex-col items-center'>
                                 <h2 className="text-2xl font-semibold text-white">{t('company')}</h2>
                                 <div className='w-6 h-1 bg-[#ED1C24] rounded-sm mt-4 mb-2'></div>
-                                <ul className="text-white font-normal text-base flex flex-col md:items-start items-center">
+                                <ul className="text-white font-normal text-base flex flex-col  items-center">
                                     <li className="mb-4 flex items-center gap-[9px]">
-                                        <img src={check} alt="Check" className='md:block hidden' />
                                         <Link to='/whoWeAre' >{t('whoWeAre')}</Link>
                                     </li>
                                     <li className="mb-4 flex items-center gap-[9px]">
-                                        <img src={check} alt="Check" className='md:block hidden' />
                                         <Link to='/contactUs' >{t('contactUs')}</Link>
                                     </li>
                                     <li className="mb-4 flex items-center gap-[9px]">
-                                        <img src={check} alt="Check" className='md:block hidden' />
                                         <Link to='/faqs' >{t('faq')}</Link>
                                     </li>
                                 </ul>
                             </div>
-                            <div className='flex flex-col items-center md:items-start'>
+                            <div className='flex flex-col items-center'>
                                 <h2 className="text-2xl font-semibold text-white">{t('legal')}</h2>
                                 <div className='w-6 h-1 bg-[#ED1C24] rounded-sm mt-4 mb-2'></div>
-                                <ul className="text-white font-normal text-base flex flex-col md:items-start items-center">
+                                <ul className="text-white font-normal text-base flex flex-col items-center">
                                     <li className="mb-4 flex items-center gap-[9px]">
-                                        <img src={check} alt="Check" className='md:block hidden' />
                                         <Link to='/terms' >{t('terms')}</Link>
                                     </li>
                                     <li className="mb-4 flex items-center gap-[9px]">
-                                        <img src={check} alt="Check" className='md:block hidden' />
                                         <Link to='/privacy' >{t('privacy')}</Link>
                                     </li>
                                 </ul>
