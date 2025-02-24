@@ -1,7 +1,9 @@
 import { useState } from "react";
 import minus from '../../assets/images/minus.svg'
 import plus from '../../assets/images/plus.svg'
+import { useTranslation } from "react-i18next";
 const Faqs = () => {
+    const { t } = useTranslation("faq");
     const [openAccordion, setOpenAccordion] = useState(null);
     const toggleAccordion = (index) => {
         setOpenAccordion(openAccordion === index ? null : index);
@@ -11,7 +13,7 @@ const Faqs = () => {
         <section className="container mx-auto lg:my-[120px] my-6 px-3 lg:px-0">
             <div className='flex items-center gap-4'>
                 <div className='w-1 md:h-[46px] h-7 bg-[#D82022] rounded-sm'></div>
-                <h1 className="font-bold md:text-[40px] text-xl text-[#1E1E1E]">الاسئلة <span className="text-[#B1060D]">الشائعة</span></h1>
+                <h1 className="font-bold md:text-[40px] text-xl text-[#1E1E1E]">{t('questions')}</h1>
             </div>
             <div id="accordion-color" className="w-full lg:mt-10 mt-4">
 

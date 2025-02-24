@@ -6,9 +6,11 @@ import navbarAr from "../locales/ar/navbar.json";
 import homeEn from "../locales/en/home.json";
 import homeAr from "../locales/ar/home.json";
 import whoWeAreEn from '../locales/en/whoWeAre.json';
-import whoWeAreAr from '../locales/ar/whoWeAre.json'
+import whoWeAreAr from '../locales/ar/whoWeAre.json';
 import contactUsEn from '../locales/en/contactUs.json';
-import contactUsAr from '../locales/ar/contactUs.json'
+import contactUsAr from '../locales/ar/contactUs.json';
+import faqEn from '../locales/en/faq.json';
+import faqAr from '../locales/ar/faq.json';
 i18n
   .use(initReactI18next)
   .init({
@@ -22,13 +24,15 @@ i18n
         navbar: navbarEn,
         home: homeEn,
         whoWeAre: whoWeAreEn,
-        contactUs: contactUsEn
+        contactUs: contactUsEn,
+        faq: faqEn
       },
       ar: {
         navbar: navbarAr,
         home: homeAr,
         whoWeAre: whoWeAreAr,
-        contactUs: contactUsAr
+        contactUs: contactUsAr,
+        faq: faqAr
       },
     },
   });
