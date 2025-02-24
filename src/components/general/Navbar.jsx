@@ -43,7 +43,7 @@ const Navbar = () => {
         i18n.changeLanguage(langCode);
         document.documentElement.dir = langCode === "ar" ? "rtl" : "ltr";
         document.body.dir = langCode === "ar" ? "rtl" : "ltr";
-        setIsOpen(false);
+        setIsOpenLang(false);
     };
 
     return (
