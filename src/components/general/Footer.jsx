@@ -4,7 +4,7 @@ import youtube from '../../assets/images/youtube.svg'
 import instagram from '../../assets/images/instagram.svg'
 import facebook from '../../assets/images/facebook.svg'
 import whatsapp from '../../assets/images/whatsapp.svg'
-import x from '../../assets/images/x.svg'
+import x from '../../assets/images/X.svg'
 import check from '../../assets/images/check.svg'
 import { Link } from 'react-router'
 import { useTranslation } from "react-i18next";
