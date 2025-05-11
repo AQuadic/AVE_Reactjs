@@ -15,7 +15,7 @@ const Header = () => {
           <p className=" text-[#505050] lg:text-2xl text-sm md:font-normal font-bold md:mt-6 mt-2 lg:!leading-[40px] text-center max-w-[1000px]">
             {t("headTitle")}
           </p>
-          <div className="md:mt-8 mt-6 flex md:gap-10 gap-6">
+          <div className=" md:mt-8 mt-6 flex md:gap-10 gap-6">
             <button
               type="button"
               className="lg:w-[215px] w-[160px] md:h-14 h-12 bg-[#D82022] text-white font-bold text-lg rounded-sm"
