@@ -1,8 +1,8 @@
 import { useTranslation } from "react-i18next";
-import coffee from '@/assets/images/coffee/coffee.png'
-import coffee1 from '@/assets/images/coffee/coffee1.png'
-import coffee2 from '@/assets/images/coffee/coffee2.png'
-import coffe3 from '@/assets/images/coffee/coffe3.png'
+import coffee from '@/assets/images/Coffee/coffee.png'
+import coffee1 from '@/assets/images/Coffee/coffee1.png'
+import coffee2 from '@/assets/images/Coffee/coffee2.png'
+import coffe3 from '@/assets/images/Coffee/coffe3.png'
 
 const Content = () => {
     const { t } = useTranslation("coffee");
