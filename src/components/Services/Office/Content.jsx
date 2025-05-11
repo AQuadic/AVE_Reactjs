@@ -1,9 +1,9 @@
 // import check from '../../../assets/images/red_check.svg'
 import { useTranslation } from "react-i18next";
-import office from '../../../assets/images/Office/officeBG.png'
-import office1 from '../../../assets/images/Office/office1.png'
-import office2 from '../../../assets/images/Office/office2.png'
-import office3 from '../../../assets/images/Office/office3.png'
+import office from '@/assets/images/Office/officeBG.png'
+import office1 from '@/assets/images/Office/office1.png'
+import office2 from '@/assets/images/Office/office2.png'
+import office3 from '@/assets/images/Office/office3.png'
 
 const Contetnt = () => {
     const { t } = useTranslation("office");
