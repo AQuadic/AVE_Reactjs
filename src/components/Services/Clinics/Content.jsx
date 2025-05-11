@@ -1,10 +1,14 @@
 // import check from '../../../assets/images/red_check.svg'
 import { useTranslation } from "react-i18next";
+import clinic from '@/assets/images/Clinics/clinic.png'
+import clinic1 from '@/assets/images/Clinics/clinic1.png'
+import clinic2 from '@/assets/images/Clinics/clinic2.png'
+
 const Content = () => {
     const { t } = useTranslation("clinics");
     return (
         <section>
-            <img src="/dist/assets/Clinics/clinic.png" className='w-full md:mt-24' alt="Image" />
+            <img src={clinic} className='w-full md:mt-24' alt="Image" />
             <div className='container mx-auto flex flex-wrap items-center justify-between md:my-[88px] mt-5'>
                 <h1 className="text-[#1E1E1E] text-[32px] font-bold md:mb-16 mb-4">{t("title")}</h1>
                 <div className="flex lg:flex-row flex-col lg:gap-0 gap-4 items-center justify-between w-full">
@@ -19,11 +23,11 @@ const Content = () => {
                         <p>{t('sevPara')}</p>
                         <p>{t('eiPara')}</p>
                     </div>
-                    <img src="/dist/assets/Clinics/clinic1.png" alt="Chairs" />
+                    <img src={clinic1} alt="Chairs" />
                 </div>
 
                 <div className="flex lg:flex-row flex-col lg:gap-0 gap-4 items-center justify-between w-full mt-16">
-                    <img src="/dist/assets/Clinics/clinic2.png" className="" alt="Chairs" />
+                    <img src={clinic2} className="" alt="Chairs" />
                     <div className="text-[#505050] text-base font-normal flex flex-col gap-2 lg:w-[719px]">
                         <p>{t('fPara')}</p>
                         <p>{t('sPara')}</p>
