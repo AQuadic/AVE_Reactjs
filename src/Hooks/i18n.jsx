@@ -21,6 +21,8 @@ import clinicsEn from '../locales/en/clinics.json';
 import clinicsAr from '../locales/ar/clinics.json'
 import coffeeEn from '../locales/en/coffee.json';
 import coffeeAr from '../locales/ar/coffee.json'
+import labEn from '../locales/en/lab.json';
+import labAr from '../locales/ar/lab.json'
 
 i18n
   .use(initReactI18next)
@@ -28,7 +30,7 @@ i18n
     lng: localStorage.getItem("language") || "en",
     fallbackLng: "en",
     interpolation: { escapeValue: false },
-    ns: ["navbar", "home", "about", "contact", "services", "office", "clinics", "coffee"],
+    ns: ["navbar", "home", "about", "contact", "services", "office", "clinics", "coffee", "lab"],
     defaultNS: "home",
     resources: {
       en: {
@@ -42,6 +44,7 @@ i18n
         office: officeEn,
         clinics: clinicsEn,
         coffee: coffeeEn,
+        lab: labEn,
       },
       ar: {
         navbar: navbarAr,
@@ -54,6 +57,7 @@ i18n
         office: officeAr,
         clinics: clinicsAr,
         coffee: coffeeAr,
+        lab: labAr,
       },
     },
   });

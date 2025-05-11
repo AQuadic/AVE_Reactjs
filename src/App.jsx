@@ -11,6 +11,7 @@ import VIP from "./pages/Services/VIP";
 import Office from "./pages/Services/Office";
 import Clinics from "./pages/Services/Clinics";
 import Coffee from "./pages/Services/Coffee";
+import Lab from "./pages/Services/Lab";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
           <Route path="/office" element={<Office />} />
           <Route path="/clinics" element={<Clinics />} />
           <Route path="/coffee" element={<Coffee />} />
+          <Route path="/lab" element={<Lab />} />
         </Route>
       </Routes>
     </BrowserRouter>
