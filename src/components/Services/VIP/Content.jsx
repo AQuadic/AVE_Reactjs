@@ -4,7 +4,7 @@ const Content = () => {
     const { t } = useTranslation("vip");
     return (
         <section>
-            <img src="/dist/assets/VIP/newVIP.png" className='w-full md:mt-24' alt="Image" />
+            <img src="./dist/assets/VIP/newVIP.png" className='w-full md:mt-24' alt="Image" />
             <div className='container mx-auto flex flex-wrap items-center justify-between md:my-[88px] mt-5'>
                 <h1 className="text-[#1E1E1E] text-[32px] font-bold md:mb-16 mb-4">{t("title")}</h1>
                 <div className="flex lg:flex-row flex-col lg:gap-0 gap-4 items-center justify-between w-full">
