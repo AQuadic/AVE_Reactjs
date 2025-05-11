@@ -132,6 +132,9 @@ const Navbar = () => {
                                         <li className="px-4 py-2 hover:bg-gray-200">
                                             <NavLink to="/coffee" className="block">{t('cafe')}</NavLink>
                                         </li>
+                                        <li className="px-4 py-2 hover:bg-gray-200">
+                                            <NavLink to="/icecream" className="block">{t('icecream')}</NavLink>
+                                        </li>
                                     </ul>
                                 )}
                             </li>

@@ -12,6 +12,7 @@ import Office from "./pages/Services/Office";
 import Clinics from "./pages/Services/Clinics";
 import Coffee from "./pages/Services/Coffee";
 import Lab from "./pages/Services/Lab";
+import IceCream from "./pages/Services/IceCream";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
           <Route path="/clinics" element={<Clinics />} />
           <Route path="/coffee" element={<Coffee />} />
           <Route path="/lab" element={<Lab />} />
+          <Route path="/icecream" element={<IceCream />} />
         </Route>
       </Routes>
     </BrowserRouter>
