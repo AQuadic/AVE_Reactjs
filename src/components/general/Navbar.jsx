@@ -118,7 +118,7 @@ const Navbar = () => {
                                             <NavLink to="/service3" className="block">{t('lab')}</NavLink>
                                         </li>
                                         <li className="px-4 py-2 hover:bg-gray-200">
-                                            <NavLink to="/service3" className="block">{t('clinics')}</NavLink>
+                                            <NavLink to="/clinics" className="block">{t('clinics')}</NavLink>
                                         </li>
                                         <li className="px-4 py-2 hover:bg-gray-200">
                                             <NavLink to="/service3" className="block">{t('disabilities')}</NavLink>

@@ -9,6 +9,7 @@ import TermsAndConditions from "./pages/TermsAndConditions";
 import AmbulanceEquipment from "./pages/Services/AmbulanceEquipment";
 import VIP from "./pages/Services/VIP";
 import Office from "./pages/Services/Office";
+import Clinics from "./pages/Services/Clinics";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="/ambEquipmenet" element={<AmbulanceEquipment />} />
           <Route path="/vip" element={<VIP />} />
           <Route path="/office" element={<Office />} />
+          <Route path="/clinics" element={<Clinics />} />
         </Route>
       </Routes>
     </BrowserRouter>

@@ -17,13 +17,16 @@ import ambequipmentEn from '../locales/en/ambequipment.json';
 import ambequipmentAr from '../locales/ar/ambequipment.json'
 import officeEn from '../locales/en/office.json';
 import officeAr from '../locales/ar/office.json'
+import clinicsEn from '../locales/en/clinics.json';
+import clinicsAr from '../locales/ar/clinics.json'
+
 i18n
   .use(initReactI18next)
   .init({
     lng: localStorage.getItem("language") || "en",
     fallbackLng: "en",
     interpolation: { escapeValue: false },
-    ns: ["navbar", "home", "about", "contact", "services", "office"],
+    ns: ["navbar", "home", "about", "contact", "services", "office", "clinics"],
     defaultNS: "home",
     resources: {
       en: {
@@ -35,6 +38,7 @@ i18n
         vip: vipEn,
         ambequipment: ambequipmentEn,
         office: officeEn,
+        clinics: clinicsEn,
       },
       ar: {
         navbar: navbarAr,
@@ -45,6 +49,7 @@ i18n
         vip: vipAr,
         ambequipment: ambequipmentAr,
         office: officeAr,
+        clinics: clinicsAr,
       },
     },
   });
