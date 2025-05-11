@@ -1,8 +1,8 @@
 import { useTranslation } from "react-i18next";
 import IceCream from '@/assets/images/Icecream/IceCream.png'
-import IceCream1 from '@/assets/images/Icecream/IceCream1.png'
-import IceCream2 from '@/assets/images/Icecream/IceCream2.png'
-import IceCream3 from '@/assets/images/Icecream/IceCream3.png'
+import IceCream1 from '@/assets/images/Icecream/icecream1.png'
+import IceCream2 from '@/assets/images/Icecream/icecream2.png'
+import IceCream3 from '@/assets/images/Icecream/icecream3.png'
 
 const Content = () => {
     const { t } = useTranslation("icecream");
