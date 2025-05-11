@@ -18,7 +18,7 @@ const Header = () => {
           <div className=" md:mt-8 mt-6 flex md:gap-10 gap-6">
             <button
               type="button"
-              className="lg:w-[215px] w-[160px] md:h-14 h-12 bg-[#D82022] text-white font-bold text-lg rounded-sm"
+              className=" lg:w-[215px] w-[160px] md:h-14 h-12 bg-[#D82022] text-white font-bold text-lg rounded-sm"
             >
               {t("prepareCar")}
             </button>
