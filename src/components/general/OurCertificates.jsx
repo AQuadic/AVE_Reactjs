@@ -18,7 +18,7 @@ const OurCertificates = () => {
               key={index}
               src={image}
               alt="Certificates"
-              className="md:w-[157px] md:h-[218px] w-[79px] h-[109px]"
+              className=" md:w-[157px] md:h-[218px] w-[79px] h-[109px]"
             />
           ))}
         </div>
