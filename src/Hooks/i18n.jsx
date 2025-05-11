@@ -19,6 +19,8 @@ import officeEn from '../locales/en/office.json';
 import officeAr from '../locales/ar/office.json'
 import clinicsEn from '../locales/en/clinics.json';
 import clinicsAr from '../locales/ar/clinics.json'
+import coffeeEn from '../locales/en/coffee.json';
+import coffeeAr from '../locales/ar/coffee.json'
 
 i18n
   .use(initReactI18next)
@@ -26,7 +28,7 @@ i18n
     lng: localStorage.getItem("language") || "en",
     fallbackLng: "en",
     interpolation: { escapeValue: false },
-    ns: ["navbar", "home", "about", "contact", "services", "office", "clinics"],
+    ns: ["navbar", "home", "about", "contact", "services", "office", "clinics", "coffee"],
     defaultNS: "home",
     resources: {
       en: {
@@ -39,6 +41,7 @@ i18n
         ambequipment: ambequipmentEn,
         office: officeEn,
         clinics: clinicsEn,
+        coffee: coffeeEn,
       },
       ar: {
         navbar: navbarAr,
@@ -50,6 +53,7 @@ i18n
         ambequipment: ambequipmentAr,
         office: officeAr,
         clinics: clinicsAr,
+        coffee: coffeeAr,
       },
     },
   });

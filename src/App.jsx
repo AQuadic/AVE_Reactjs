@@ -10,6 +10,7 @@ import AmbulanceEquipment from "./pages/Services/AmbulanceEquipment";
 import VIP from "./pages/Services/VIP";
 import Office from "./pages/Services/Office";
 import Clinics from "./pages/Services/Clinics";
+import Coffee from "./pages/Services/Coffee";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           <Route path="/vip" element={<VIP />} />
           <Route path="/office" element={<Office />} />
           <Route path="/clinics" element={<Clinics />} />
+          <Route path="/coffee" element={<Coffee />} />
         </Route>
       </Routes>
     </BrowserRouter>
