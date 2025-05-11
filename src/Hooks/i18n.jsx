@@ -15,13 +15,15 @@ import vipEn from '../locales/en/vip.json';
 import vipAr from '../locales/ar/vip.json'
 import ambequipmentEn from '../locales/en/ambequipment.json';
 import ambequipmentAr from '../locales/ar/ambequipment.json'
+import officeEn from '../locales/en/office.json';
+import officeAr from '../locales/ar/office.json'
 i18n
   .use(initReactI18next)
   .init({
     lng: localStorage.getItem("language") || "en",
     fallbackLng: "en",
     interpolation: { escapeValue: false },
-    ns: ["navbar", "home", "about", "contact", "services"],
+    ns: ["navbar", "home", "about", "contact", "services", "office"],
     defaultNS: "home",
     resources: {
       en: {
@@ -32,6 +34,7 @@ i18n
         faq: faqEn,
         vip: vipEn,
         ambequipment: ambequipmentEn,
+        office: officeEn,
       },
       ar: {
         navbar: navbarAr,
@@ -41,6 +44,7 @@ i18n
         faq: faqAr,
         vip: vipAr,
         ambequipment: ambequipmentAr,
+        office: officeAr,
       },
     },
   });

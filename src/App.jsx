@@ -8,6 +8,7 @@ import Privacy from "./pages/Privacy";
 import TermsAndConditions from "./pages/TermsAndConditions";
 import AmbulanceEquipment from "./pages/Services/AmbulanceEquipment";
 import VIP from "./pages/Services/VIP";
+import Office from "./pages/Services/Office";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/terms" element={<TermsAndConditions />} />
           <Route path="/ambEquipmenet" element={<AmbulanceEquipment />} />
           <Route path="/vip" element={<VIP />} />
+          <Route path="/office" element={<Office />} />
         </Route>
       </Routes>
     </BrowserRouter>
