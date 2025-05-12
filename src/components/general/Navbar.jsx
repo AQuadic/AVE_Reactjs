@@ -40,6 +40,24 @@ const Navbar = () => {
         };
     }, [isOpen, setIsOpen]);
 
+    const sidebarRef = useRef(null);
+
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            if (sidebarRef.current && !sidebarRef.current.contains(event.target)) {
+                toggleSidebar();
+            }
+        };
+
+        if (isSidebarOpen) {
+            document.addEventListener("mousedown", handleClickOutside);
+        }
+
+        return () => {
+            document.removeEventListener("mousedown", handleClickOutside);
+        };
+    }, [isSidebarOpen, toggleSidebar]);
+
 
     return (
         <div className="md:shadow-md">
@@ -51,7 +69,7 @@ const Navbar = () => {
                         </button>
                         <NavLink to='/'><img src={Logo} className='md:w-[99px] md:h-[83.97px] w-12 h-12' alt="Logo" /></NavLink>
                     </div>
-                    <div className={`fixed inset-y-0 ${isSidebarOpen ? 'left-0' : '-left-full'} bg-white w-64 md:hidden z-50 transition-all duration-300 ease-in-out`}>
+                    <div ref={sidebarRef} className={`fixed inset-y-0 ${isSidebarOpen ? 'left-0' : '-left-full'} bg-white w-64 md:hidden z-50 transition-all duration-300 ease-in-out`}>
                         <div className='flex items-center justify-between px-5'>
                             <img src={Logo} className='md:w-[99px] md:h-[83.97px] w-12 h-12' alt="Logo" />
                             <img src={closeIcon} alt="Close Icon" onClick={toggleSidebar} />
