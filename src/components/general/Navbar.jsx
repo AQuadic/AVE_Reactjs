@@ -4,7 +4,7 @@ import arrow from '../../assets/images/arrow_down.svg'
 import toggle from '../../assets/images/toggle.svg'
 import sidebarMob from '../../assets/images/sidebarMob.webp'
 import closeIcon from '../../assets/images/closeIcon.svg'
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { useTranslation } from "react-i18next";
 import "../../Hooks/i18n";
 import Language from './Language'
@@ -21,6 +21,25 @@ const Navbar = () => {
     const toggleSidebar = () => {
         setIsSidebarOpen(!isSidebarOpen);
     };
+
+    const dropdownRef = useRef(null);
+
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+                setIsOpen(false);
+            }
+        };
+
+        if (isOpen) {
+            document.addEventListener('mousedown', handleClickOutside);
+        }
+
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, [isOpen, setIsOpen]);
+
 
     return (
         <div className="md:shadow-md">
@@ -110,7 +129,7 @@ const Navbar = () => {
                                 </NavLink>
 
                                 {isOpen && (
-                                    <ul className="absolute left-[-50px] top-6 mt-2 bg-white border border-gray-100 rounded-md w-60 z-10">
+                                    <ul ref={dropdownRef} className="absolute left-[-50px] top-6 mt-2 bg-white border border-gray-100 rounded-md w-60 z-10">
                                         <li className="px-4 py-2 hover:bg-[#D82022]">
                                             <NavLink to="/vip" className="block">{t('vip')}</NavLink>
                                         </li>
