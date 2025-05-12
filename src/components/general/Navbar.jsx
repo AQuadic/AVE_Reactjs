@@ -70,6 +70,9 @@ const Navbar = () => {
                                         <li className="px-4 py-2 hover:bg-gray-200">
                                             <NavLink to="/service3" className="block text-sm">{t('cafe')}</NavLink>
                                         </li>
+                                        <li className="px-4 py-2 hover:bg-gray-200">
+                                            <NavLink to="/icecream" className="block">{t('icecream')}</NavLink>
+                                        </li>
                                     </ul>
                                 )}
                             </li>
@@ -108,31 +111,31 @@ const Navbar = () => {
 
                                 {isOpen && (
                                     <ul className="absolute left-[-50px] top-6 mt-2 bg-white border border-gray-100 rounded-md w-60 z-10">
-                                        <li className="px-4 py-2 hover:bg-gray-200">
+                                        <li className="px-4 py-2 hover:bg-[#D82022]">
                                             <NavLink to="/vip" className="block">{t('vip')}</NavLink>
                                         </li>
-                                        <li className="px-4 py-2 hover:bg-gray-200">
+                                        <li className="px-4 py-2 hover:bg-[#D82022]">
                                             <NavLink to="/ambEquipmenet" className="block">{t('ambEquip')}</NavLink>
                                         </li>
-                                        <li className="px-4 py-2 hover:bg-gray-200">
+                                        <li className="px-4 py-2 hover:bg-[#D82022]">
                                             <NavLink to="/lab" className="block">{t('lab')}</NavLink>
                                         </li>
-                                        <li className="px-4 py-2 hover:bg-gray-200">
+                                        <li className="px-4 py-2 hover:bg-[#D82022]">
                                             <NavLink to="/clinics" className="block">{t('clinics')}</NavLink>
                                         </li>
-                                        <li className="px-4 py-2 hover:bg-gray-200">
+                                        <li className="px-4 py-2 hover:bg-[#D82022]">
                                             <NavLink to="/service3" className="block">{t('disabilities')}</NavLink>
                                         </li>
-                                        <li className="px-4 py-2 hover:bg-gray-200">
+                                        <li className="px-4 py-2 hover:bg-[#D82022]">
                                             <NavLink to="/service3" className="block">{t('workshop')}</NavLink>
                                         </li>
-                                        <li className="px-4 py-2 hover:bg-gray-200">
+                                        <li className="px-4 py-2 hover:bg-[#D82022]">
                                             <NavLink to="/office" className="block">{t('office')}</NavLink>
                                         </li>
-                                        <li className="px-4 py-2 hover:bg-gray-200">
+                                        <li className="px-4 py-2 hover:bg-[#D82022]">
                                             <NavLink to="/coffee" className="block">{t('cafe')}</NavLink>
                                         </li>
-                                        <li className="px-4 py-2 hover:bg-gray-200">
+                                        <li className="px-4 py-2 hover:bg-[#D82022]">
                                             <NavLink to="/icecream" className="block">{t('icecream')}</NavLink>
                                         </li>
                                     </ul>
