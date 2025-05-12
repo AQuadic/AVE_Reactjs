@@ -15,10 +15,10 @@ const HomePage = () => {
       <AboutUs />
       <Products />
       <Services />
-      {/* <OurCertificates />
-      <HowWeWork />
       <Clients />
       <ClientReviews />
+      <OurCertificates />
+      {/* <HowWeWork />
       <GetApp /> */}
     </div>
   )

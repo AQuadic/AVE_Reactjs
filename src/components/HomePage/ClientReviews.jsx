@@ -1,21 +1,22 @@
 import { useTranslation } from "react-i18next";
+import clientImg from '../../assets/images/clientImg.webp'
 
 const ClientReviews = () => {
     const reviews = [
         {
-            title: "المختبر المتنقل",
+            title: "لوريم إيبسوم هو ببساطة نص شكلي (بلا معنى) يُستخدم في صناعة الطباعة والتنضيد. وقد كان لوريم إيبسوم النص الشكلي القياسي لهذه الصناعة على الإطلاق... اقرأ المزيد",
             review: "شركة راقية ومحترمة وانصح بالتعامل معها",
             author: "احمد امين",
             rating: 5,
         },
         {
-            title: "المختبر المتنقل",
+            title: "لوريم إيبسوم هو ببساطة نص شكلي (بلا معنى) يُستخدم في صناعة الطباعة والتنضيد. وقد كان لوريم إيبسوم النص الشكلي القياسي لهذه الصناعة على الإطلاق... اقرأ المزيد",
             review: "شركة راقية ومحترمة وانصح بالتعامل معها",
             author: "احمد امين",
             rating: 5,
         },
         {
-            title: "المختبر المتنقل",
+            title: "لوريم إيبسوم هو ببساطة نص شكلي (بلا معنى) يُستخدم في صناعة الطباعة والتنضيد. وقد كان لوريم إيبسوم النص الشكلي القياسي لهذه الصناعة على الإطلاق... اقرأ المزيد",
             review: "شركة راقية ومحترمة وانصح بالتعامل معها",
             author: "احمد امين",
             rating: 5,
@@ -23,10 +24,18 @@ const ClientReviews = () => {
     ];
     const Card = ({ title, review, author, rating }) => {
         return (
-            <div className="sm:w-[390px] w-full sm:h-[142px] px-4 py-6 shadow-md">
-                <div className="flex items-center justify-between">
-                    <h2 className="text-[#1D431E] font-bold text-lg">{title}</h2>
+            <div className="md:w-[592px] w-full sm:h-[256px] px-4 py-6 shadow-lg rounded-[30px] bg-[#FFFFFF] flex flex-col justify-between">
+                <h2 className="text-[#1D431E] font-bold text-lg">{title}</h2>
+                <div className="flex justify-between">
+                    <div className="flex items-center gap-4">
+                        <img src={clientImg} className="w-20 h-20" alt="Client Image" />
+                        <div>
+                            <h2 className="text-[#121212] text-base font-bold">{author}</h2>
+                            <p className="text-[#5D5D5D] text-xs">ضابط حربي</p>
+                        </div>
+                    </div>
                     <div className="flex items-center">
+                        <p className="text-[#121212] font-bold">(6.5)</p>
                         {[...Array(rating)].map((_, i) => (
                             <svg
                                 key={i}
@@ -41,8 +50,6 @@ const ClientReviews = () => {
                         ))}
                     </div>
                 </div>
-                <p className="text-[#505050] font-normal text-base mt-4">{review}</p>
-                <p className="text-[#1E1E1E] text-xs mt-4">{author}</p>
             </div>
         );
     };
