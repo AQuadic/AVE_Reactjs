@@ -4,7 +4,7 @@ import heroImage from "../../assets/images/home/heroImage.png";
 const Header = () => {
   const { t } = useTranslation("home");
   return (
-    <header className="container md:h-80">
+    <header className="container">
       <div className="">
         <section className="flex flex-col items-center animate__animated animate__bounceInRight md:my-[30px] md:order-1 order-2 mt-8  mb-12 md:mb-0 md:mt-14 text-center md:text-start">
           <h1 className="md:font-normal font-bold lg:text-[56px] text-xl text-[#1E1E1E] lg:leading-[56px]">

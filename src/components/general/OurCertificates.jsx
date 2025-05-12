@@ -4,7 +4,7 @@ const OurCertificates = () => {
   const { t } = useTranslation();
   const certificatesArray = Array(4).fill(certificates);
   return (
-    <section className="container mx-auto flex flex-wrap items-center justify-between md:mt-[640px] mt-5">
+    <section className="container mx-auto flex flex-wrap items-center justify-between mt-5">
       <div className="">
         <div className="flex items-center justify-center md:justify-start gap-4">
           <div className="w-1 md:h-[46px] h-7 bg-[#D82022] rounded-sm"></div>
