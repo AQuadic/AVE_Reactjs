@@ -7,12 +7,12 @@ import FAQs from "./pages/FAQs";
 import Privacy from "./pages/Privacy";
 import TermsAndConditions from "./pages/TermsAndConditions";
 import AmbulanceEquipment from "./pages/Services/AmbulanceEquipment";
-import VIP from "./pages/Services/VIP";
 import Office from "./pages/Services/Office";
 import Clinics from "./pages/Services/Clinics";
 import Coffee from "./pages/Services/Coffee";
 import Lab from "./pages/Services/Lab";
 import IceCream from "./pages/Services/IceCream";
+import Vip from "@/pages/Vip.jsx";
 
 function App() {
   return (
@@ -26,7 +26,7 @@ function App() {
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/terms" element={<TermsAndConditions />} />
           <Route path="/ambEquipmenet" element={<AmbulanceEquipment />} />
-          <Route path="/vip" element={<VIP />} />
+          <Route path="/vip" element={<Vip />} />
           <Route path="/office" element={<Office />} />
           <Route path="/clinics" element={<Clinics />} />
           <Route path="/coffee" element={<Coffee />} />
