@@ -1,16 +1,20 @@
-import { NavLink } from "react-router";
+import { NavLink, useLocation } from "react-router";
 import Logo from "../../assets/images/navbarLogo.svg";
 import arrow from "../../assets/images/arrow_down.svg";
 import toggle from "../../assets/images/toggle.svg";
 import sidebarMob from "../../assets/images/sidebarMob.webp";
 import closeIcon from "../../assets/images/closeIcon.svg";
+import VipLogo from "../../assets/images/vipPage/vipLogo.png";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import "../../Hooks/i18n";
 import Language from "./Language";
+import { ChevronDown } from "lucide-react";
 
 const Navbar = () => {
   const { t } = useTranslation("navbar");
+  const { pathname } = useLocation();
+  const isVip = pathname.includes("vip");
 
   const [isOpen, setIsOpen] = useState(false);
   const toggleDropdown = () => {
@@ -23,7 +27,9 @@ const Navbar = () => {
   };
 
   return (
-    <div className="md:shadow-md">
+    <div
+      className={`md:shadow-md ${isVip ? "bg-[#1E1E1E] text-white" : "bg-white text-[#1E1E1E]"}`}
+    >
       <nav className="container z-20 relative">
         <div className="max-w-screen-2xl flex flex-wrap items-center justify-between mx-auto md:px-4">
           <div className="flex items-center space-x-3 rtl:space-x-reverse">
@@ -36,8 +42,8 @@ const Navbar = () => {
             </button>
             <NavLink to="/">
               <img
-                src={Logo}
-                className="md:w-[99px] md:h-[83.97px] w-12 h-12"
+                src={isVip ? VipLogo : Logo}
+                className="md:w-[99px] md:h-[83.97px] w-12 h-12 p-2"
                 alt="Logo"
               />
             </NavLink>
@@ -56,7 +62,7 @@ const Navbar = () => {
             <div className="flex flex-col gap-5 font-normal text-lg rtl:space-x-reverse">
               <NavLink
                 to="/"
-                className="block py-1 px-4 md:p-0 text-xs text-[#1E1E1E] transform hover:text-[#D82022] hover:underline transition-all duration-300"
+                className="block py-1 px-4 md:p-0 text-xs  transform ${isVip ? 'hover:text-vipColor': 'hover:text-[#D82022]'} hover:text-[#D82022] hover:underline transition-all duration-300"
                 aria-current="page"
               >
                 {t("home")}
@@ -66,7 +72,7 @@ const Navbar = () => {
                 onClick={toggleDropdown}
               >
                 <img src={arrow} className="w-3 h-3" alt="Arrow" />
-                <NavLink className="block px-2 md:p-0 text-[#1E1E1E] text-sm transform hover:text-[#D82022] hover:underline transition-all duration-300">
+                <NavLink className="block px-2 md:p-0  text-sm transform ${isVip ? 'hover:text-vipColor': 'hover:text-[#D82022]'} hover:text-[#D82022] hover:underline transition-all duration-300">
                   {t("services")}
                 </NavLink>
                 {isOpen && (
@@ -121,19 +127,19 @@ const Navbar = () => {
               </li>
               <NavLink
                 to="/whoWeAre"
-                className="block py-1 px-4 md:p-0 text-xs text-[#1E1E1E] transform hover:text-[#D82022] hover:underline transition-all duration-300"
+                className="block py-1 px-4 md:p-0 text-xs  transform ${isVip ? 'hover:text-vipColor': 'hover:text-[#D82022]'} hover:text-[#D82022] hover:underline transition-all duration-300"
               >
                 {t("whoWeAre")}
               </NavLink>
               <NavLink
                 to="/contactUs"
-                className="block py-1 px-4 md:p-0 text-xs text-[#1E1E1E] transform hover:text-[#D82022] hover:underline transition-all duration-300"
+                className="block py-1 px-4 md:p-0 text-xs  transform ${isVip ? 'hover:text-vipColor': 'hover:text-[#D82022]'} hover:text-[#D82022] hover:underline transition-all duration-300"
               >
                 {t("contactUs")}
               </NavLink>
               <NavLink
                 to="/faqs"
-                className="block py-1 px-4 md:p-0 text-xs text-[#1E1E1E] transform hover:text-[#D82022] hover:underline transition-all duration-300"
+                className="block py-1 px-4 md:p-0 text-xs  transform ${isVip ? 'hover:text-vipColor': 'hover:text-[#D82022]'} hover:text-[#D82022] hover:underline transition-all duration-300"
               >
                 {t("faq")}
               </NavLink>
@@ -142,9 +148,7 @@ const Navbar = () => {
               <div className="px-4 flex gap-2">
                 <img src={sidebarMob} alt="Phone" />
                 <div>
-                  <p className="text-[#1E1E1E] text-xs">
-                    {t("arabicDownload")}
-                  </p>
+                  <p className=" text-xs">{t("arabicDownload")}</p>
                   <button className="w-[113px] h-6 rounded-sm bg-[#D82022] text-white text-xs">
                     {t("downloadApp")}
                   </button>
@@ -170,7 +174,7 @@ const Navbar = () => {
               <li>
                 <NavLink
                   to="/"
-                  className="block py-2 px-3 md:p-0 text-[#1E1E1E] transform  hover:text-[#D82022]  hover:underline transition-all duration-300"
+                  className={`block py-2 px-3 md:p-0  transform ${isVip ? "hover:text-vipColor" : "hover:text-[#D82022]"}    hover:underline transition-all duration-300`}
                   aria-current="page"
                 >
                   {t("home")}
@@ -180,8 +184,10 @@ const Navbar = () => {
                 className="flex items-center gap-1 relative"
                 onClick={toggleDropdown}
               >
-                <img src={arrow} alt="Arrow" />
-                <NavLink className="block py-2 px-3 md:p-0 text-[#1E1E1E] transform hover:text-[#D82022] hover:underline transition-all duration-300">
+                <ChevronDown color={isVip ? "white" : "black"} />
+                <NavLink
+                  className={`block py-2 px-3 md:p-0  transform ${isVip ? "hover:text-vipColor" : "hover:text-[#D82022]"}  hover:underline transition-all duration-300`}
+                >
                   {t("services")}
                 </NavLink>
 
@@ -238,7 +244,7 @@ const Navbar = () => {
               <li>
                 <NavLink
                   to="/whoWeAre"
-                  className="block py-2 px-3 md:p-0 text-[#1E1E1E] transform  hover:text-[#D82022]  hover:underline transition-all duration-300"
+                  className={`block py-2 px-3 md:p-0  transform ${isVip ? "hover:text-vipColor" : "hover:text-[#D82022]"}   hover:underline transition-all duration-300`}
                 >
                   {t("whoWeAre")}
                 </NavLink>
@@ -246,7 +252,7 @@ const Navbar = () => {
               <li>
                 <NavLink
                   to="/contactUs"
-                  className="block py-2 px-3 md:p-0 text-[#1E1E1E] transform  hover:text-[#D82022]  hover:underline transition-all duration-300"
+                  className={`block py-2 px-3 md:p-0  transform ${isVip ? "hover:text-vipColor" : "hover:text-[#D82022]"}     hover:underline transition-all duration-300`}
                 >
                   {t("contactUs")}
                 </NavLink>
@@ -254,7 +260,7 @@ const Navbar = () => {
               <li>
                 <NavLink
                   to="/faqs"
-                  className="block py-2 px-3 md:p-0 text-[#1E1E1E] transform  hover:text-[#D82022]  hover:underline transition-all duration-300"
+                  className={`block py-2 px-3 md:p-0  transform ${isVip ? "hover:text-vipColor" : "hover:text-[#D82022]"}    hover:underline transition-all duration-300`}
                 >
                   {t("faq")}
                 </NavLink>
