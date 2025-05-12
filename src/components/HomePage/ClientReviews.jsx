@@ -43,9 +43,17 @@ const ClientReviews = () => {
             {
                 breakpoint: 4000,
                 settings: {
-                    slidesToShow: 1,
+                    slidesToShow: 2,
                     centerMode: true,
                     centerPadding: "40px",
+                },
+            },
+            {
+                breakpoint: 1440,
+                settings: {
+                    slidesToShow: 1.8,
+                    centerMode: true,
+                    centerPadding: "70px",
                 },
             },
             {
