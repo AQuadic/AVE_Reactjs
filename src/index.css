@@ -95,3 +95,13 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+.yellow-gradient {
+  background: linear-gradient(135deg, #B88E06 0%, #DDB611 53.37%, #B88E06 100%);
+
+}
+
+.grey-gradient {
+  background: linear-gradient(180deg, rgba(132, 132, 132, 0.6) 0%, rgba(30, 30, 30, 0.5) 63.46%);
+
+}
