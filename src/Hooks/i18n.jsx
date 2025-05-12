@@ -26,6 +26,7 @@ import labAr from '../locales/ar/lab.json'
 import icecreamEn from '../locales/en/icecream.json';
 import icecreamAr from '../locales/ar/icecream.json'
 
+
 i18n
   .use(initReactI18next)
   .init({
