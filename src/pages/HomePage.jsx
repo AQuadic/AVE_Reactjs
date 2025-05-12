@@ -6,6 +6,7 @@ import HowWeWork from "@/components/HomePage/HowWeWork";
 import GetApp from "@/components/HomePage/GetApp";
 import AboutUs from "@/components/HomePage/AboutUs";
 import Products from "@/components/HomePage/Products";
+import Services from "@/components/HomePage/Services";
 
 const HomePage = () => {
   return (
@@ -13,11 +14,12 @@ const HomePage = () => {
       <Header />
       <AboutUs />
       <Products />
-      <OurCertificates />
+      <Services />
+      {/* <OurCertificates />
       <HowWeWork />
       <Clients />
       <ClientReviews />
-      <GetApp />
+      <GetApp /> */}
     </div>
   )
 };
