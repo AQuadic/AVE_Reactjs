@@ -68,7 +68,7 @@ const VipHero = () => {
           </div>
 
           {/* Animated Hero Image */}
-          <div className="relative w-full max-w-[777px] h-full z-30">
+          <div className="relative w-full max-w-[777px] h-full z-20">
             <AnimatePresence mode="wait">
               <motion.img
                 key={selectedIdx}
@@ -84,20 +84,20 @@ const VipHero = () => {
           </div>
         </div>
 
-        <div className="absolute bottom-0 sm:bottom-20 z-10">
+        <div className="absolute bottom-0 sm:bottom-20 z-0">
           <img
             src={carShadow}
             alt="Car Shadow"
             className="h-[96px]  w-screen"
           />
-          <div className=" flex items-center gap-12 absolute bottom-1/2 translate-y-1/2  w-full container right-1/2 translate-x-1/2  ">
-            <button onClick={handlePrevImage}>
-              <img src={vipArrowRight} />
-            </button>
-            <button onClick={handlePrevImage}>
-              <img src={vipArrowLeft} />
-            </button>{" "}
-          </div>
+        </div>
+        <div className=" flex items-center gap-12 absolute  bottom-5  sm:bottom-[100px]  w-full container right-1/2 translate-x-1/2  z-[999] ">
+          <button onClick={handlePrevImage}>
+            <img src={vipArrowRight} className="relative" />
+          </button>
+          <button onClick={handleNextImage}>
+            <img src={vipArrowLeft} />
+          </button>{" "}
         </div>
       </div>
     </section>
