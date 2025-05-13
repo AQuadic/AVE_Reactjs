@@ -4,8 +4,10 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import OpinionCard from "@/components/Vip/OpinionCard.jsx";
 import { useEffect } from "react";
+import { useTranslation } from "react-i18next";
 
 const VipOpinions = () => {
+  const { t } = useTranslation("home");
   const certificatesArray = Array(4).fill(certificates);
 
   // Apply custom styles for yellow dots
@@ -71,7 +73,7 @@ const VipOpinions = () => {
     <section className="container mx-auto mt-5 px-4 pb-14 py-12">
       <h2 className="flex items-center gap-2">
         <div className="h-10 w-1 bg-vipColor"></div>
-        <span className="text-2xl sm:text-[40px] py-12">أراء عملائنا</span>
+        <span className="text-2xl sm:text-[40px] py-12"> {t('reviews')} <span>{t('client')}</span></span>
       </h2>
 
       <Slider {...settings} className="yellow-dots">
