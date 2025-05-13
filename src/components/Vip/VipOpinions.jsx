@@ -68,10 +68,10 @@ const VipOpinions = () => {
   };
 
   return (
-    <section className="container mx-auto mt-5 px-4 pb-14">
+    <section className="container mx-auto mt-5 px-4 pb-14 py-12">
       <h2 className="flex items-center gap-2">
         <div className="h-10 w-1 bg-vipColor"></div>
-        <span className="text-2xl sm:text-[40px]">أراء عملائنا</span>
+        <span className="text-2xl sm:text-[40px] py-12">أراء عملائنا</span>
       </h2>
 
       <Slider {...settings} className="yellow-dots">
