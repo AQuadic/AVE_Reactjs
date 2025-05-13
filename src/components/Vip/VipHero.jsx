@@ -28,7 +28,7 @@ const VipHero = () => {
   };
 
   return (
-    <section className="bg-[#121212] text-white relative z-10">
+    <section className=" relative z-10">
       <div className="flex gap-5 w-full container justify-end">
         {imagesThumbnails.map((image, idx) => (
           <div
