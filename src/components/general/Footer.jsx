@@ -8,6 +8,12 @@ import x from '../../assets/images/X.svg'
 import check from '../../assets/images/check.svg'
 import { Link } from 'react-router'
 import { useTranslation } from "react-i18next";
+import FacebookIcon from '../icons/home/FacebookIcon'
+import YoutubeIcon from '../icons/home/YoutubeIcon'
+import WhatsappIcon from '../icons/home/WhatsappIcon'
+import InstaIcon from '../icons/home/InstaIcon'
+import LinkedInIcon from '../icons/home/LinkedInIcon'
+import TwitterIcon from '../icons/home/TwitterIcon'
 const Footer = () => {
     const { t } = useTranslation("navbar");
     return (
@@ -21,12 +27,12 @@ const Footer = () => {
                             </Link>
                             <p className='md:w-[373px] text-base leading-6 text-white md:text-start text-center'>{t('paragraph')}</p>
                             <div className='flex items-center md:justify-start justify-center gap-3 mt-[18px]'>
-                                <Link to=''><img src={LinkedIn} className='w-8 h-8' alt="LinkedIn" /></Link>
-                                <Link to=''><img src={youtube} className='w-8 h-8' alt="youtube" /></Link>
-                                <Link to=''><img src={instagram} className='w-8 h-8' alt="instagram" /></Link>
-                                <Link to=''><img src={facebook} className='w-8 h-8' alt="facebook" /></Link>
-                                <Link to=''><img src={whatsapp} className='w-8 h-8' alt="whatsapp" /></Link>
-                                <Link to=''><img src={x} className='w-8 h-8' alt="x" /></Link>
+                                <Link to=''><FacebookIcon /></Link>
+                                <Link to=''><InstaIcon /></Link>
+                                <Link to=''><WhatsappIcon /></Link>
+                                <Link to=''><YoutubeIcon /></Link>
+                                <Link to=''><LinkedInIcon /></Link>
+                                <Link to=''><TwitterIcon /></Link>
                             </div>
                         </div>
                         <div className="flex md:flex-row flex-col rtl:lg:gap-20 ltr:lg:gap-12 md:gap-5 mt-5 xl:mt-0">
