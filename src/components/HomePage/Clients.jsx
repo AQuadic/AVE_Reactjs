@@ -16,18 +16,18 @@ const Clients = () => {
 
     return (
         <section className='container mx-auto flex flex-wrap items-center justify-between md:my-[88px] my-5'>
-            <div className='px-3 lg:px-0'>
+            <div className=''>
                 <div className='flex items-center md:justify-start gap-4'>
                     <div className='w-1 md:h-[46px] h-7 bg-[#D82022] rounded-sm'></div>
                     <h1 className="font-bold md:text-[40px] text-xl text-[#1E1E1E]">{t('ourClients')}</h1>
                 </div>
                 <section className="container mt-8" dir="ltr">
                     <Marquee
-                        className="marquee-shadow py-6 px-3 rounded-[20px]"
+                        className="marquee-shadow py-6 md:px-3 rounded-[20px]"
                         autoFill={true}
                     >
                         {logos.map((logo, index) => (
-                            <img key={index} src={logo} className="w-[112px] h-[112px] rounded-full" alt={`Logo ${index}`} />
+                            <img key={index} src={logo} className="md:w-[112px] w-[74px] md:h-[112px] h-[74px] rounded-full" alt={`Logo ${index}`} />
                         ))}
                     </Marquee>
                 </section>
