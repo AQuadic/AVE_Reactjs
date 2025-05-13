@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import vipCar from "../../assets/images/vipPage/vipCar.png";
+import { useTranslation } from "react-i18next";
 
 const containerVariants = {
   hidden: {},
@@ -24,6 +25,7 @@ const itemVariants = {
 };
 
 const VipProducts = () => {
+  const { t } = useTranslation("home");
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
@@ -33,7 +35,7 @@ const VipProducts = () => {
     <section className="container" ref={ref}>
       <h2 className="flex items-center gap-2">
         <div className="h-10 w-1 bg-vipColor"></div>
-        <span className="text-2xl sm:text-[40px]">المنتجات</span>
+        <span className="text-2xl sm:text-[40px]">{t('products')}</span>
       </h2>
 
       <motion.div
@@ -54,7 +56,7 @@ const VipProducts = () => {
               className="relative left-5 -bottom-8"
             />
             <p className="text-vipColor text-lg sm:text-2xl bg-black text-center pt-12 pb-16 rounded-b-lg">
-              موديل السيارة
+              {t('carModel')}
             </p>
           </motion.div>
         ))}
