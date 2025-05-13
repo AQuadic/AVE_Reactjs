@@ -27,7 +27,9 @@ const Clients = () => {
                         autoFill={true}
                     >
                         {logos.map((logo, index) => (
-                            <img key={index} src={logo} className="md:w-[112px] w-[74px] md:h-[112px] h-[74px] rounded-full" alt={`Logo ${index}`} />
+                            <div key={index} className="mr-4">
+                                <img src={logo} className="md:w-[112px] w-[74px] md:h-[112px] h-[74px] rounded-full" alt={`Logo ${index}`} />
+                            </div>
                         ))}
                     </Marquee>
                 </section>
