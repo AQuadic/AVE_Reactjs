@@ -1,43 +1,61 @@
 import heroImage from "../../assets/images/vipPage/vipHero.png";
 import heroGradient from "../../assets/images/vipPage/heroGradient.png";
 import vipCar from "../../assets/images/vipPage/vipCar.png";
+import carShadow from "../../assets/images/vipPage/carShadow.png";
+import vipArrowRight from "../../assets/images/vipPage/vipArrowRight.svg";
+import vipArrowLeft from "../../assets/images/vipPage/vipArrowLeft.svg";
 import { Link } from "react-router";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { motion, AnimatePresence } from "framer-motion";
 
 const VipHero = () => {
   const [selectedIdx, setSelectedIdx] = useState(0);
   const { t } = useTranslation("vipPage");
-  const images = [vipCar, vipCar, vipCar];
+
+  const imagesThumbnails = [vipCar, vipCar, vipCar];
+  const images = [heroImage, heroImage, heroImage];
+
+  const handleNextImage = () => {
+    setSelectedIdx((prevIdx) => (prevIdx + 1) % imagesThumbnails.length);
+  };
+
+  const handlePrevImage = () => {
+    setSelectedIdx(
+      (prevIdx) =>
+        (prevIdx - 1 + imagesThumbnails.length) % imagesThumbnails.length,
+    );
+  };
 
   return (
     <section className="bg-[#121212] text-white relative z-10">
       <div className="flex gap-5 w-full container justify-end">
-        {images.map((image, idx) => (
+        {imagesThumbnails.map((image, idx) => (
           <div
             onClick={() => setSelectedIdx(idx)}
             key={idx}
-            className={`cursor-pointer p-2 ${idx === selectedIdx ? "yellow-gradient" : " grey-gradient"}  w-[133px] h-[70px] my-8 sm:my-[56px] relative rounded-lg`}
+            className={`cursor-pointer p-2 ${idx === selectedIdx ? "yellow-gradient" : "grey-gradient"} w-[133px] h-[70px] my-8  relative rounded-lg`}
           >
             <img src={image} className="w-[160px] absolute -right-4" />
           </div>
         ))}
       </div>
+
       <div>
         <img
           src={heroGradient}
           className="absolute -top-64 left-0 -z-20"
           alt=""
         />
-        <div className="container flex justify-between max-md:flex-col">
-          <div className="flex flex-col gap-[40px]">
+        <div className="container flex justify-between max-md:flex-col ">
+          <div className="flex flex-col gap-[40px] relative z-10">
             <p className="text-2xl sm:text-[32px]">{t("subtitle")}</p>
             <h1 className="font-bold text-4xl sm:text-[56px] text-vipColor">
               {t("title")}
             </h1>
             <p
               style={{ lineHeight: "1.7" }}
-              className="max-w-[450px] text-lg sm:text-2xl  whitespace-pre-wrap  "
+              className="max-w-[450px] text-lg sm:text-2xl whitespace-pre-wrap"
             >
               {t("description")}
             </p>
@@ -48,11 +66,38 @@ const VipHero = () => {
               {t("button")}
             </Link>
           </div>
+
+          {/* Animated Hero Image */}
+          <div className="relative w-full max-w-[777px] h-full z-30">
+            <AnimatePresence mode="wait">
+              <motion.img
+                key={selectedIdx}
+                src={images[selectedIdx]}
+                alt="Hero"
+                initial={{ opacity: 0, x: 100 }}
+                animate={{ opacity: 1, x: 0 }}
+                exit={{ opacity: 0, x: -100 }}
+                transition={{ duration: 0.5 }}
+                className="w-full h-auto"
+              />
+            </AnimatePresence>
+          </div>
+        </div>
+
+        <div className="absolute bottom-0 sm:bottom-20 z-10">
           <img
-            src={heroImage}
-            alt="Hero"
-            className="w-full max-w-[777px] h-full"
+            src={carShadow}
+            alt="Car Shadow"
+            className="h-[96px]  w-screen"
           />
+          <div className=" flex items-center gap-12 absolute bottom-1/2 translate-y-1/2  w-full container right-1/2 translate-x-1/2  ">
+            <button onClick={handlePrevImage}>
+              <img src={vipArrowRight} />
+            </button>
+            <button onClick={handlePrevImage}>
+              <img src={vipArrowLeft} />
+            </button>{" "}
+          </div>
         </div>
       </div>
     </section>
