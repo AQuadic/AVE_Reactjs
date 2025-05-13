@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
 import heroImage from "../../assets/images/home/heroImage.png";
+import { Link } from "react-router";
 
 const Header = () => {
   const { t } = useTranslation("home");
@@ -16,18 +17,16 @@ const Header = () => {
             {t("headTitle")}
           </p>
           <div className=" md:mt-8 mt-6 flex md:gap-10 gap-6">
-            <button
-              type="button"
-              className=" lg:w-[215px] w-[160px] md:h-14 h-12 bg-[#D82022] text-white font-bold text-lg rounded-sm"
+            <Link to='/contactUs'
+              className=" flex items-center justify-center lg:w-[215px] w-[160px] md:h-14 h-12 bg-[#D82022] text-white font-bold text-lg rounded-sm"
             >
               {t("prepareCar")}
-            </button>
-            <button
-              type="button"
-              className="lg:w-[215px] w-[160px] md:h-14 h-12 border border-[#D82022] text-[#D82022] font-bold text-lg rounded-sm"
+            </Link>
+            <Link to='/contactUs'
+              className="flex items-center justify-center lg:w-[215px] w-[160px] md:h-14 h-12 border border-[#D82022] text-[#D82022] font-bold text-lg rounded-sm"
             >
               {t("buyCar")}
-            </button>
+            </Link>
           </div>
         </section>
         <img src={heroImage} alt="hero" />
