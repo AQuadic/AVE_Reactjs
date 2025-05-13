@@ -11,7 +11,7 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const VipHero = () => {
   const [selectedIdx, setSelectedIdx] = useState(0);
-  const { t } = useTranslation("vipPage");
+  const { t, i18n } = useTranslation("vipPage");
 
   const imagesThumbnails = [vipCar, vipCar, vipCar];
   const images = [heroImage, heroImage, heroImage];
@@ -28,15 +28,18 @@ const VipHero = () => {
   };
 
   return (
-    <section className=" relative z-10">
+    <section className="relative z-10">
       <div className="flex gap-5 w-full container justify-end">
         {imagesThumbnails.map((image, idx) => (
           <div
             onClick={() => setSelectedIdx(idx)}
             key={idx}
-            className={`cursor-pointer p-2 ${idx === selectedIdx ? "yellow-gradient" : "grey-gradient"} w-[133px] h-[70px] my-8  relative rounded-lg`}
+            className={`cursor-pointer p-2 ${idx === selectedIdx ? "yellow-gradient" : "grey-gradient"} w-[133px] h-[70px] my-8 relative rounded-lg`}
           >
-            <img src={image} className="w-[160px] absolute -right-4" />
+            <img
+              src={image}
+              className="w-[160px] absolute -right-4 transform ltr:scale-x-[-1]"
+            />
           </div>
         ))}
       </div>
@@ -47,7 +50,7 @@ const VipHero = () => {
           className="absolute -top-64 left-0 -z-20"
           alt=""
         />
-        <div className="container flex justify-between max-md:flex-col ">
+        <div className="container flex justify-between max-md:flex-col">
           <div className="flex flex-col gap-[40px] relative z-10">
             <p className="text-2xl sm:text-[32px]">{t("subtitle")}</p>
             <h1 className="font-bold text-4xl sm:text-[56px] text-vipColor">
@@ -74,11 +77,23 @@ const VipHero = () => {
                 key={selectedIdx}
                 src={images[selectedIdx]}
                 alt="Hero"
-                initial={{ opacity: 0, x: 100 }}
-                animate={{ opacity: 1, x: 0 }}
-                exit={{ opacity: 0, x: -100 }}
+                initial={{
+                  opacity: 0,
+                  x: 100,
+                  scaleX: i18n.language === "en" ? -1 : 1,
+                }}
+                animate={{
+                  opacity: 1,
+                  x: 0,
+                  scaleX: i18n.language === "en" ? -1 : 1,
+                }}
+                exit={{
+                  opacity: 0,
+                  x: -100,
+                  scaleX: i18n.language === "en" ? -1 : 1,
+                }}
                 transition={{ duration: 0.5 }}
-                className="w-full h-auto"
+                className="w-full h-auto transform scale-x-[-1]"
               />
             </AnimatePresence>
           </div>
@@ -88,15 +103,18 @@ const VipHero = () => {
           <img
             src={carShadow}
             alt="Car Shadow"
-            className="h-[96px]  w-screen"
+            className="h-[96px] w-screen transform ltr:scale-x-[-1]"
           />
         </div>
-        <div className=" flex items-center gap-12 absolute  bottom-5  sm:bottom-[100px]  w-full container right-1/2 translate-x-1/2  z-[999] ">
+        <div className="flex items-center gap-12 absolute bottom-5 sm:bottom-[100px] w-full container right-1/2 translate-x-1/2 z-[999]">
           <button onClick={handlePrevImage}>
-            <img src={vipArrowRight} className="relative" />
+            <img
+              src={vipArrowRight}
+              className="relative transform ltr:scale-x-[-1]"
+            />
           </button>
           <button onClick={handleNextImage}>
-            <img src={vipArrowLeft} />
+            <img src={vipArrowLeft} className="transform ltr:scale-x-[-1]" />
           </button>{" "}
         </div>
       </div>
