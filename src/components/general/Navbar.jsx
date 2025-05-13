@@ -79,10 +79,8 @@ const Navbar = () => {
 
   const renderServicesDropdown = (isMobile = true) => (
     <ul
-      ref={dropdownRef}
-      className={`absolute ${isMobile ? "left-2" : "left-[-50px]"} top-6 mt-2 ${
-        isVip ? "bg-[#1E1E1E]" : "bg-white"
-      } rounded-md w-60 z-10`}
+      ref={isMobile ? null : dropdownRef}
+      className={`absolute ${isMobile ? "left-2" : "left-[-50px]"} top-6 mt-2 ${isVip ? "bg-[#1E1E1E]" : "bg-white"}  rounded-md w-60 z-10`}
     >
       {servicesDropdown.map((service, index) => (
         <li
