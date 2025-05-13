@@ -53,7 +53,7 @@ const VipProducts = () => {
               alt="Image"
               className="relative left-5 -bottom-8"
             />
-            <p className="text-vipColor text-lg sm:text-2xl bg-black text-center py-12 rounded-b-lg">
+            <p className="text-vipColor text-lg sm:text-2xl bg-black text-center pt-12 pb-16 rounded-b-lg">
               موديل السيارة
             </p>
           </motion.div>

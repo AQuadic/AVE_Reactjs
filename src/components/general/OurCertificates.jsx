@@ -9,44 +9,43 @@ const OurCertificates = () => {
   const certificatesArray = Array(4).fill(certificates);
 
   const settings = {
-    centerMode: true,
-    centerPadding: "100px",
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 2.2,
+    slidesToShow: 3,
     slidesToScroll: 1,
     arrows: false,
     autoplay: true,
     autoplaySpeed: 3000,
+    centerMode: true,
+    centerPadding: "60px",
     responsive: [
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
           centerMode: true,
-          centerPadding: "100px",
+          centerPadding: "40px",
         },
       },
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 2,
           centerMode: true,
-          centerPadding: "60px",
+          centerPadding: "30px",
         },
       },
       {
         breakpoint: 480,
         settings: {
           slidesToShow: 2,
-          centerMode: true,
+          centerMode: false,
           centerPadding: "0px",
         },
       },
     ],
   };
-
   return (
     <section className="container mx-auto mt-5 px-4 pb-14">
       <div className="flex items-center  md:justify-start gap-4 mb-8">
@@ -58,7 +57,10 @@ const OurCertificates = () => {
 
       <Slider {...settings} className="red-dots">
         {certificatesArray.map((image, index) => (
-          <div key={index} className="flex items-center justify-center px-2 md:my-8">
+          <div
+            key={index}
+            className="flex items-center justify-center px-2 md:my-8"
+          >
             <img
               src={image}
               alt="Certificates"
