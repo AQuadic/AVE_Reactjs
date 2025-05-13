@@ -10,11 +10,11 @@ const OurCertificates = () => {
 
   const settings = {
     centerMode: true,
-    centerPadding: "30px",
+    centerPadding: "100px",
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 4,
+    slidesToShow: 2.2,
     slidesToScroll: 1,
     arrows: false,
     autoplay: true,
@@ -39,16 +39,16 @@ const OurCertificates = () => {
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 2,
           centerMode: true,
-          centerPadding: "20px",
+          centerPadding: "0px",
         },
       },
     ],
   };
 
   return (
-    <section className="container mx-auto mt-5 px-4">
+    <section className="container mx-auto mt-5 px-4 pb-14">
       <div className="flex items-center  md:justify-start gap-4 mb-8">
         <div className="w-1 md:h-[46px] h-7 bg-[#D82022] rounded-sm"></div>
         <h1 className="font-bold md:text-[40px] text-xl text-[#1E1E1E]">
@@ -56,13 +56,13 @@ const OurCertificates = () => {
         </h1>
       </div>
 
-      <Slider {...settings}>
+      <Slider {...settings} className="red-dots">
         {certificatesArray.map((image, index) => (
-          <div key={index} className="flex items-center justify-center px-2 my-8">
+          <div key={index} className="flex items-center justify-center px-2 md:my-8">
             <img
               src={image}
               alt="Certificates"
-              className=" md:w-[157px] md:h-[218px] w-[79px] h-[109px] object-cover"
+              className=" md:w-[270px] md:h-[375px] w-[163px] h-[228px] object-cover"
             />
           </div>
         ))}

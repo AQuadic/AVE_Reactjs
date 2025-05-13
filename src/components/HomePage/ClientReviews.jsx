@@ -68,7 +68,7 @@ const ClientReviews = () => {
     };
 
     const Card = ({ title, review, author, rating }) => (
-        <div className="xl:w-[592px] lg:w-[480px] sm:h-[256px] px-4 py-6 shadow-lg rounded-[30px] bg-[#FFFFFF] flex flex-col justify-between mx-2">
+        <div className="xl:w-[592px] lg:w-[480px] sm:h-[256px] px-4 py-6 my-8 shadow-lg rounded-[30px] bg-[#FFFFFF] flex flex-col justify-between mx-2">
             <h2 className="text-[#1D431E] font-bold text-lg mb-4">{title}</h2>
             <div className="flex justify-between">
                 <div className="flex items-center gap-4">
@@ -105,7 +105,7 @@ const ClientReviews = () => {
                 </h1>
             </div>
             <div className="w-full px-4 md:px-0">
-                <Slider {...settings}>
+                <Slider {...settings} className="red-dots">
                     {reviews.map((item, index) => (
                         <div key={index}>
                             <Card {...item} />
