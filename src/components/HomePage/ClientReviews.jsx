@@ -79,7 +79,7 @@ const ClientReviews = () => {
         };
 
         return (
-            <div className="xl:w-[592px] lg:w-[480px] sm:h-[256px] px-4 py-6 my-8 shadow-lg rounded-[30px] bg-[#FFFFFF] flex flex-col justify-between mx-2">
+            <div className="xl:w-[592px] lg:w-[480px] sm:h-[256px] px-4 py-6 my-8 shadow-xl rounded-[30px] bg-[#FFFFFF] flex flex-col justify-between mx-2">
                 <h2 className="text-[#1D431E] font-bold text-lg mb-4">
                     {showFullTitle ? fullTitle : title}
                     <button onClick={toggleTitle} className="text-[#D82022] text-base font-bold">
