@@ -12,7 +12,7 @@ const OurWorks = () => {
 
     return (
         <section className='container'>
-            <div className='flex items-center gap-4'>
+            <div className='flex items-center gap-4 mt-8 md:mt-0'>
                 <div className="w-2 md:h-[46px] h-7 bg-[#D82022] rounded-sm"></div>
                 <h1 className="font-bold md:text-[40px] text-xl text-[#1E1E1E]">
                     {t('ourWork')}
@@ -22,7 +22,7 @@ const OurWorks = () => {
             <div className="flex xl:flex-row flex-col items-center justify-between md:my-20">
                 <img className='lg:w-[563px] lg:h-[449px] w-[228.6px] h-[182px]' src={AboutUsImg} alt="Image" />
                 <div>
-                    <div className='flex items-center gap-4'>
+                    <div className='flex items-center gap-4 mt-4 md:mt-0'>
                         <div className="w-2 md:h-[46px] h-7 bg-[#D82022] rounded-sm"></div>
                         <h1 className="font-bold md:text-[40px] text-xl text-[#1E1E1E]">
                             {t('aboutus')}
@@ -44,6 +44,9 @@ const OurWorks = () => {
                             {showMore ? t('readLess') : t('readMore')}
                         </span>
                     </p>
+                    <button className="md:w-[304px] w-[200px] md:h-14 h-12 bg-[#D82022] rounded-[8px] text-[#FAFAFA] text-2xl my-6">
+                        {t('reserve')}
+                    </button>
                 </div>
             </div>
 
