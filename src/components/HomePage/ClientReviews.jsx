@@ -42,13 +42,13 @@ const ClientReviews = () => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 1,
+    slidesToShow: 2,
     slidesToScroll: 1,
     arrows: false,
     autoplay: true,
     autoplaySpeed: 3000,
     centerMode: true,
-    centerPadding: "25%",
+    centerPadding: "0",
     responsive: [
       {
         breakpoint: 1024,
