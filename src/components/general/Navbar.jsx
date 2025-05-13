@@ -254,7 +254,7 @@ const Navbar = () => {
                   to="/faqs"
                   className={`block py-2 px-3 md:p-0 transform ${
                     isVip ? "hover:text-vipColor" : "hover:text-[#D82022]"
-                  } hover:underline transition-all duration-300`}
+                  }  hover:underline transition-all duration-300`}
                 >
                   {t("faq")}
                 </NavLink>
