@@ -43,7 +43,7 @@ const Footer = () => {
                             <div className=''>
                                 <h2 className="text-2xl font-semibold text-white lg:text-start text-center">{t('services')}</h2>
                                 <div className='w-6 h-1 bg-[#ED1C24] rounded-sm mt-4 mb-2 mx-auto lg:mx-0'></div>
-                                <ul className="text-white font-normal text-base flex md:flex-row flex-col items-center justify-center gap-3">
+                                <ul className="text-white font-normal text-base flex md:flex-row flex-col  justify-center gap-3">
                                     <div className='order-2 md:order-2 flex flex-col items-center md:items-start'>
                                         <li className="mb-4 flex items-center gap-[9px]">
                                             <img src={check} alt="Check" className='md:block hidden' />
@@ -53,10 +53,10 @@ const Footer = () => {
                                             <img src={check} alt="Check" className='md:block hidden' />
                                             <Link to='/' >{t('clinics')}</Link>
                                         </li>
-                                        <li className="mb-4 flex items-center gap-[9px]">
+                                        {/* <li className="mb-4 flex items-center gap-[9px]">
                                             <img src={check} alt="Check" className='md:block hidden' />
                                             <Link to='/' >{t('workshop')}</Link>
-                                        </li>
+                                        </li> */}
                                         <li className="mb-4 flex items-center gap-[9px]">
                                             <img src={check} alt="Check" className='md:block hidden' />
                                             <Link to='/' >{t('cafe')}</Link>
