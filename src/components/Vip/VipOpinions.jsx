@@ -16,10 +16,10 @@ const VipOpinions = () => {
     const style = document.createElement("style");
     style.innerHTML = `
       .yellow-dots .slick-dots li button:before {
-        color: #FFD700 !important;
+        color: #DDB611 !important;
       }
       .yellow-dots .slick-dots li.slick-active button:before {
-        color: #FFD700 !important;
+        color: #DDB611 !important;
         opacity: 1;
       }
     `;
