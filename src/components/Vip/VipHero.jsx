@@ -74,6 +74,7 @@ const VipHero = () => {
           <div className="relative w-full max-w-[777px] h-full z-20">
             <AnimatePresence mode="wait">
               <motion.img
+                loading="lazy"
                 key={selectedIdx}
                 src={images[selectedIdx]}
                 alt="Hero"
