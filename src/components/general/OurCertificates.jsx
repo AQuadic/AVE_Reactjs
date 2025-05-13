@@ -12,7 +12,7 @@ const OurCertificates = () => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: 2.9,
     slidesToScroll: 1,
     arrows: false,
     autoplay: true,
