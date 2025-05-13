@@ -34,36 +34,36 @@ const VipOpinions = () => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 1, // Show only 1 slide in the center
+    slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
     autoplay: true,
     autoplaySpeed: 3000,
-    centerMode: true, // Enable center mode
-    centerPadding: "25%", // Show about half of the adjacent slides
+    centerMode: true,
+    centerPadding: "25%",
     responsive: [
       {
         breakpoint: 1024,
         settings: {
           slidesToShow: 1,
-          centerMode: true,
-          centerPadding: "20%",
+          centerMode: false,
+          centerPadding: "0",
         },
       },
       {
         breakpoint: 768,
         settings: {
           slidesToShow: 1,
-          centerMode: true,
-          centerPadding: "15%",
+          centerMode: false,
+          centerPadding: "0",
         },
       },
       {
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
-          centerMode: true,
-          centerPadding: "10%",
+          centerMode: false,
+          centerPadding: "0",
         },
       },
     ],
@@ -73,7 +73,10 @@ const VipOpinions = () => {
     <section className="container mx-auto mt-5 px-4 pb-14 py-12">
       <h2 className="flex items-center gap-2">
         <div className="h-10 w-1 bg-vipColor"></div>
-        <span className="text-2xl sm:text-[40px] py-12"> {t('reviews')} <span>{t('client')}</span></span>
+        <span className="text-2xl sm:text-[40px] py-12">
+          {" "}
+          {t("reviews")} <span>{t("client")}</span>
+        </span>
       </h2>
 
       <Slider {...settings} className="yellow-dots">

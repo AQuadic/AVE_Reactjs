@@ -1,6 +1,6 @@
-import clientImg from '@/assets/images/clientImg.webp'
-import { useState } from 'react';
-import { useTranslation } from 'react-i18next';
+import clientImg from "@/assets/images/clientImg.webp";
+import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const OpinionCard = ({ isGolden }) => {
   const { t } = useTranslation("home");
@@ -11,19 +11,17 @@ const OpinionCard = ({ isGolden }) => {
   };
   return (
     <div
-      className={`w-[350px] sm:w-[600px] m-5 p-6 ${isGolden ? "yellow-gradient text-white" : "bg-white text-black"} rounded-xl`}
+      className={`w-full max-w-[600px] m-5 p-6 ${isGolden ? "yellow-gradient text-white" : "bg-white text-black"} rounded-xl`}
     >
-      <p className='text-[#505050] lg:text-2xl text-base lg:font-bold font-normal md:w-[570px] mt-4'>
-        {t('headTitle')}
-        {showMore && (
-          <span> {t('headTitle')}</span>
-        )}
+      <p className="text-[#505050] lg:text-2xl text-base lg:font-bold font-normal md:w-[570px] mt-4">
+        {t("headTitle")}
+        {showMore && <span> {t("headTitle")}</span>}
         <span
-          className='text-[#D82022] cursor-pointer'
+          className="text-[#D82022] cursor-pointer"
           onClick={toggleShowMore}
         >
-          {' '}
-          {showMore ? t('readLess') : t('readMore')}
+          {" "}
+          {showMore ? t("readLess") : t("readMore")}
         </span>
       </p>
       <div className="flex justify-between">
