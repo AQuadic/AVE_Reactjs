@@ -82,7 +82,7 @@ const Language = () => {
         aria-haspopup="true"
       >
         <img src={isVip ? globalYellow : global} alt="Language" width={24} />
-        <p className={`${isVip ? "text-vipColor" : "text-white"}`}>
+        <p className={`${isVip ? "text-vipColor" : "text-black"}`}>
           {getCurrentLanguageDisplay()}
         </p>
       </button>
