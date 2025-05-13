@@ -21,7 +21,7 @@ const Language = () => {
     {
       code: "ar",
       name: "العربية",
-      flag: "https://purecatamphetamine.github.io/country-flag-icons/3x2/AE.svg",
+      flag: "https://purecatamphetamine.github.io/country-flag-icons/3x2/EG.svg",
     },
   ];
 
