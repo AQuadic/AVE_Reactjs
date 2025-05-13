@@ -4,7 +4,6 @@ import { useTranslation } from "react-i18next";
 import { ChevronDown } from "lucide-react";
 
 import Logo from "../../assets/images/navbarLogo.svg";
-import Logo from "../../assets/images/navbarLogo.svg";
 import enLogo from "@/assets/images/home/enLogo.svg";
 
 import VipLogo from "../../assets/images/vipPage/vipLogo.png";
