@@ -1,4 +1,5 @@
 import Logo from '../../assets/images/navbarLogo.svg'
+import enLogo from '@/assets/images/home/enLogo.svg'
 import LinkedIn from '../../assets/images/linkedin.svg'
 import youtube from '../../assets/images/youtube.svg'
 import instagram from '../../assets/images/instagram.svg'
@@ -22,8 +23,11 @@ const Footer = () => {
                 <div className="container w-full max-w-screen-2xl p-4 py-6 lg:py-8">
                     <div className="xl:flex xl:gap-32 lg:gap-20">
                         <div className="mb-6 md:mb-0">
-                            <Link to='/' className="flex items-center justify-center md:justify-start">
+                            <Link to='/' className="flex items-center justify-center md:justify-start rtl:flex ltr:hidden">
                                 <img src={Logo} alt="Logo" />
+                            </Link>
+                            <Link to='/' className="flex items-center justify-center md:justify-start rtl:hidden ltr:flex">
+                                <img src={enLogo} className='w-[112px] h-[112px]' alt="Logo" />
                             </Link>
                             <p className='md:w-[373px] text-base leading-6 text-white md:text-start text-center'>{t('paragraph')}</p>
                             <div className='flex items-center md:justify-start justify-center gap-3 mt-[18px]'>
