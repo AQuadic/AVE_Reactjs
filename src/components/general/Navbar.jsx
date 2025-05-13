@@ -5,7 +5,7 @@ import { ChevronDown } from "lucide-react";
 
 import Logo from "../../assets/images/navbarLogo.svg";
 import VipLogo from "../../assets/images/vipPage/vipLogo.png";
-import arrow from "../../assets/images/arrow_down.svg";
+// import arrow from "../../assets/images/arrow_down.svg";
 import toggle from "../../assets/images/toggle.svg";
 import toggleWhite from "../../assets/images/toggleWhite.svg";
 import sidebarMob from "../../assets/images/sidebarMob.webp";
@@ -70,14 +70,14 @@ const Navbar = () => {
     { route: "/ambEquipmenet", label: "ambEquip" },
     { route: "/lab", label: "lab" },
     { route: "/clinics", label: "clinics" },
-    { route: "/service3", label: "disabilities" },
-    { route: "/service3", label: "workshop" },
+    // { route: "/service3", label: "disabilities" },
+    // { route: "/service3", label: "workshop" },
     { route: "/office", label: "office" },
     { route: "/coffee", label: "cafe" },
     { route: "/icecream", label: "icecream" },
   ];
 
-  const renderServicesDropdown = (isMobile = false) => (
+  const renderServicesDropdown = (isMobile = true) => (
     <ul
       ref={isMobile ? null : dropdownRef}
       className={`absolute ${isMobile ? "left-2" : "left-[-50px]"} top-6 mt-2 ${isVip ? "bg-[#1E1E1E]" : "bg-white"}  rounded-md w-60 z-10`}
