@@ -26,14 +26,14 @@ const VipHero = () => {
           className="absolute -top-64 left-0 -z-20"
           alt=""
         />
-        <div className="container flex justify-between ">
+        <div className="container flex justify-between max-md:flex-col">
           <div className="flex flex-col gap-4  ">
-            <p className="text-[32px]">تجهيز سيارة</p>
-            <h1 className="font-bold text-[56px] text-vipColor">
+            <p className="text-2xl sm:text-[32px]">تجهيز سيارة</p>
+            <h1 className="font-bold text-4xl sm:text-[56px] text-vipColor">
               {" "}
               كبار الشخصيات
             </h1>
-            <p className="max-w-[450px] text-2xl leading-10 ">
+            <p className="max-w-[450px] text-lg sm:text-2xl leading-10 ">
               نحن نقدم أرقى سيارات VIP لتلبية وتلبية جميع أذواق واحتياجات شركات
               السياحة وسيارات رجال الأعمال ومركبات الاجتماعات المتنقلة.
             </p>
