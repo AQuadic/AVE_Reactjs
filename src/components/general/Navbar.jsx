@@ -7,6 +7,7 @@ import Logo from "../../assets/images/navbarLogo.svg";
 import VipLogo from "../../assets/images/vipPage/vipLogo.png";
 import arrow from "../../assets/images/arrow_down.svg";
 import toggle from "../../assets/images/toggle.svg";
+import toggleWhite from "../../assets/images/toggleWhite.svg";
 import sidebarMob from "../../assets/images/sidebarMob.webp";
 import closeIcon from "../../assets/images/closeIcon.svg";
 
@@ -104,7 +105,7 @@ const Navbar = () => {
           <div className="flex items-center space-x-3 rtl:space-x-reverse">
             <button className="md:hidden flex" onClick={toggleSidebar}>
               <img
-                src={toggle}
+                src={isVip ? toggleWhite : toggle}
                 className="w-[16.5px] h-[12.5px]"
                 alt="Menu Icon"
               />
@@ -121,7 +122,7 @@ const Navbar = () => {
           {/* Mobile Sidebar */}
           <div
             ref={sidebarRef}
-            className={`fixed inset-y-0 ${isSidebarOpen ? "left-0" : "-left-full"} bg-white w-64 md:hidden z-50 transition-all duration-300 ease-in-out`}
+            className={`fixed inset-y-0 ${isSidebarOpen ? "left-0" : "-left-full"} ${isVip ? "bg-[#1E1E1E]" : "bg-white"} w-64 md:hidden z-50 transition-all duration-300 ease-in-out`}
           >
             <div className="flex items-center justify-between px-5">
               <img
@@ -143,7 +144,7 @@ const Navbar = () => {
                 className="flex items-center relative px-2"
                 onClick={toggleDropdown}
               >
-                <img src={arrow} className="w-3 h-3" alt="Arrow" />
+                {isVip ? <ChevronDown color="white" /> : <ChevronDown />}
                 <NavLink
                   className={`block px-2 md:p-0 text-sm transform ${isVip ? "hover:text-vipColor" : "hover:text-[#D82022]"} hover:underline transition-all duration-300`}
                 >
