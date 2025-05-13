@@ -79,10 +79,13 @@ const Navbar = () => {
   const renderServicesDropdown = (isMobile = false) => (
     <ul
       ref={isMobile ? null : dropdownRef}
-      className={`absolute ${isMobile ? "left-2" : "left-[-50px]"} top-6 mt-2 bg-white border border-gray-100 rounded-md w-60 z-10`}
+      className={`absolute ${isMobile ? "left-2" : "left-[-50px]"} top-6 mt-2 ${isVip ? "bg-[#1E1E1E]" : "bg-white"}  rounded-md w-60 z-10`}
     >
       {servicesDropdown.map((service, index) => (
-        <li key={index} className="px-4 py-2 hover:bg-[#D82022]">
+        <li
+          key={index}
+          className={`px-4 py-2 ${isVip ? "hover:bg-vipColor" : "hover:bg-[#D82022]"}`}
+        >
           <NavLink to={service.route} className="block">
             {t(service.label)}
           </NavLink>
