@@ -1,9 +1,10 @@
 import service1 from '../../assets/images/HealthCare/ambulanceServices.png'
 import service2 from '../../assets/images/HealthCare/ClinicServices.png'
-import MaintenanceMob from '../icons/home/MaintenanceMob'
 import { useTranslation } from "react-i18next";
 import Ambulance from '../icons/HealthCare/Ambulance';
 import Clinics from '../icons/HealthCare/Clinics';
+import AmbulanceMob from '../icons/HealthCare/AmbulanceMob';
+import ClinicsMob from '../icons/HealthCare/ClinicsMob';
 const Services = () => {
     const { t } = useTranslation("home");
     return (
@@ -15,7 +16,7 @@ const Services = () => {
                         <Ambulance />
                     </div>
                     <div className='lg:hidden flex lg:w-[100px] lg:h-[100px] w-10 h-10 bg-[#FFFFFF] rounded-full mt-[-10%]  items-center justify-center'>
-                        <MaintenanceMob />
+                        <AmbulanceMob />
                     </div>
                     <h1 className='text-[#1E1E1E] font-bold lg:text-[40px] text-sm lg:mt-10 mt-1'>{t('ambulance')}</h1>
                 </div>
@@ -26,7 +27,7 @@ const Services = () => {
                         <Clinics />
                     </div>
                     <div className='lg:hidden flex lg:w-[100px] lg:h-[100px] w-10 h-10 bg-[#FFFFFF] rounded-full mt-[-10%]  items-center justify-center'>
-                        <MaintenanceMob />
+                        <ClinicsMob />
                     </div>
                     <h1 className='text-[#1E1E1E] font-bold lg:text-[40px] text-sm lg:mt-10 mt-1'>{t('clinics')}</h1>
                 </div>

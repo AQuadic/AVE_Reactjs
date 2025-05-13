@@ -4,6 +4,7 @@ import Maintenance from '../icons/home/Maintenance'
 import ReplacaeMob from '../icons/home/ReplacaeMob'
 import MaintenanceMob from '../icons/home/MaintenanceMob'
 import { useTranslation } from 'react-i18next'
+import { Link } from 'react-router'
 const Services = () => {
     const { t } = useTranslation("home");
     return (
@@ -15,27 +16,30 @@ const Services = () => {
                 </h1>
             </div>
             <div className="mt-14 flex gap-6">
-                <div className="lg:w-[588px] w-[163px] lg:h-[584px] h-[198px] border border-[#CBCBCB] rounded-3xl flex flex-col items-center pt-4">
-                    <img src={service} className='lg:w-[556px] lg:h-[350px] w-[147px] h-[124px]' alt="Service" />
-                    <div className='lg:flex hidden lg:w-[100px] lg:h-[100px] w-10 h-10 bg-[#FFFFFF] rounded-full mt-[-10%] items-center justify-center'>
-                        <Replace />
+                <Link to="contactUs">
+                    <div className="lg:w-[588px] w-[163px] lg:h-[584px] h-[198px] border border-[#CBCBCB] rounded-3xl flex flex-col items-center pt-4">
+                        <img src={service} className='lg:w-[556px] lg:h-[350px] w-[147px] h-[124px]' alt="Service" />
+                        <div className='lg:flex hidden lg:w-[100px] lg:h-[100px] w-10 h-10 bg-[#FFFFFF] rounded-full mt-[-10%] items-center justify-center'>
+                            <Replace />
+                        </div>
+                        <div className='lg:hidden flex lg:w-[100px] lg:h-[100px] w-10 h-10 bg-[#FFFFFF] rounded-full mt-[-10%] items-center justify-center'>
+                            <ReplacaeMob />
+                        </div>
+                        <h1 className='text-[#1E1E1E] font-bold lg:text-[40px] text-sm lg:mt-8'>{t('replace')}</h1>
                     </div>
-                    <div className='lg:hidden flex lg:w-[100px] lg:h-[100px] w-10 h-10 bg-[#FFFFFF] rounded-full mt-[-10%] items-center justify-center'>
-                        <ReplacaeMob />
+                </Link>
+                <Link to="contactUs">
+                    <div className="lg:w-[588px] w-[163px] lg:h-[584px] h-[198px] border border-[#CBCBCB] rounded-3xl flex flex-col items-center pt-4">
+                        <img src={service} className='lg:w-[556px] lg:h-[350px] w-[147px] h-[124px]' alt="Service" />
+                        <div className='lg:flex hidden lg:w-[100px] lg:h-[100px] w-10 h-10 bg-[#FFFFFF] rounded-full mt-[-10%]  items-center justify-center'>
+                            <Maintenance />
+                        </div>
+                        <div className='lg:hidden flex lg:w-[100px] lg:h-[100px] w-10 h-10 bg-[#FFFFFF] rounded-full mt-[-10%]  items-center justify-center'>
+                            <MaintenanceMob />
+                        </div>
+                        <h1 className='text-[#1E1E1E] font-bold lg:text-[40px] text-sm lg:mt-8'>{t('maintenance')}</h1>
                     </div>
-                    <h1 className='text-[#1E1E1E] font-bold lg:text-[40px] text-sm lg:mt-8'>{t('replace')}</h1>
-                </div>
-
-                <div className="lg:w-[588px] w-[163px] lg:h-[584px] h-[198px] border border-[#CBCBCB] rounded-3xl flex flex-col items-center pt-4">
-                    <img src={service} className='lg:w-[556px] lg:h-[350px] w-[147px] h-[124px]' alt="Service" />
-                    <div className='lg:flex hidden lg:w-[100px] lg:h-[100px] w-10 h-10 bg-[#FFFFFF] rounded-full mt-[-10%]  items-center justify-center'>
-                        <Maintenance />
-                    </div>
-                    <div className='lg:hidden flex lg:w-[100px] lg:h-[100px] w-10 h-10 bg-[#FFFFFF] rounded-full mt-[-10%]  items-center justify-center'>
-                        <MaintenanceMob />
-                    </div>
-                    <h1 className='text-[#1E1E1E] font-bold lg:text-[40px] text-sm lg:mt-8'>{t('maintenance')}</h1>
-                </div>
+                </Link>
             </div>
         </section>
     )
