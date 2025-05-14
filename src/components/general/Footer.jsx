@@ -6,11 +6,11 @@ import check from "../../assets/images/check.svg";
 import { Link } from "react-router";
 import { useTranslation } from "react-i18next";
 import FacebookIcon from "../icons/home/FacebookIcon";
-import YoutubeIcon from "../icons/home/YoutubeIcon";
+// import YoutubeIcon from "../icons/home/YoutubeIcon";
 import WhatsappIcon from "../icons/home/WhatsappIcon";
 import InstaIcon from "../icons/home/InstaIcon";
-import LinkedInIcon from "../icons/home/LinkedInIcon";
-import TwitterIcon from "../icons/home/TwitterIcon";
+// import LinkedInIcon from "../icons/home/LinkedInIcon";
+// import TwitterIcon from "../icons/home/TwitterIcon";
 import i18n from "i18next";
 import Tiktok from "../icons/home/Tiktok";
 const Footer = () => {
@@ -19,7 +19,7 @@ const Footer = () => {
     console.log(isVip);
     return (
         <div className="relative">
-            <footer className="bg-[#1E1E1E] xl:h-[372px]">
+            <footer className="bg-[#1E1E1E]">
                 <div className="container w-full max-w-screen-2xl p-4 py-6 lg:py-8">
                     <div className="xl:flex xl:gap-32 lg:gap-20">
                         <div className="mb-6 md:mb-0">
@@ -36,14 +36,22 @@ const Footer = () => {
                             <p className="md:w-[373px] text-base leading-6 text-white md:text-start text-center">
                                 {t("paragraph")}
                             </p>
+                            <div className="md:w-[373px] text-base leading-6 text-white md:text-start text-center mt-4">
+                                <p>62 Central Axis Street - Extension of the Sixth Industrial Zone - 6th of October - Giza</p>
+                            </div>
+                            <div className=" text-base leading-6 text-white md:text-start text-center mt-4 flex flex-col gap-1">
+                                <a href="https://wa.me/20109000638" target="_blank" rel="noopener noreferrer">01009000638</a>
+                                <a href="https://wa.me/201200127070" target="_blank" rel="noopener noreferrer">01200127070</a>
+                            </div>
+
                             <div className="flex items-center md:justify-start justify-center gap-3 mt-[18px]">
                                 <Link to='https://www.facebook.com/alarabiave'><FacebookIcon /></Link>
                                 <Link to='https://www.instagram.com/alarabia_ave'><InstaIcon /></Link>
                                 <a href="https://wa.me/201009000638" target="_blank" rel="noopener noreferrer" >
                                     <WhatsappIcon />
                                 </a>
-                                <Link to='https://www.instagram.com/alarabia_ave'><Tiktok /></Link>
-                                <Link to="">
+                                <Link to='https://www.tiktok.com/@ave_alarbia'><Tiktok /></Link>
+                                {/* <Link to="">
                                     <YoutubeIcon />
                                 </Link>
                                 <Link to="">
@@ -51,7 +59,7 @@ const Footer = () => {
                                 </Link>
                                 <Link to="">
                                     <TwitterIcon />
-                                </Link>
+                                </Link> */}
                             </div>
                         </div>
                         <div className="flex md:flex-row flex-col rtl:lg:gap-20 ltr:lg:gap-12 md:gap-5 mt-5 xl:mt-0">
