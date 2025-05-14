@@ -50,5 +50,7 @@
     "office": "Office",
     "cafe": "Cafe",
     "icecream": "Ice Cream",
-    "models": "Models"
+    "models": "Models",
+    "icu": "ICU",
+    "standard": "Standard"
 }
