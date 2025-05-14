@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import vipCar from "../../assets/images/vipPage/vipCar.png";
 import { useTranslation } from "react-i18next";
@@ -35,7 +35,7 @@ const VipProducts = () => {
     <section className="container" ref={ref}>
       <h2 className="flex items-center gap-2">
         <div className="h-10 w-1 bg-vipColor"></div>
-        <span className="text-2xl sm:text-[40px]">{t('products')}</span>
+        <span className="text-2xl sm:text-[40px]">{t('models')}</span>
       </h2>
 
       <motion.div
