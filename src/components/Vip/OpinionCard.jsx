@@ -25,19 +25,13 @@ const OpinionCard = ({ isGolden }) => {
         </span>
       </p>
       <div className="flex justify-between">
-        <div className="flex items-center gap-4">
-          <img src={clientImg} className="w-20 h-20" alt="Client" />
-          <div>
-            <h2 className="text-[#121212] text-base font-bold">أحمد أمين</h2>
-            <p className="text-[#5D5D5D] text-xs">ضابط حربي</p>
-          </div>
-        </div>
-        <div className="flex items-center">
+        <div className="flex items-center gap-4"></div>
+        <div className="flex items-center mt-2">
           <p className="text-[#121212] font-bold ms-2">(5)</p>
           {[...Array(5)].map((_, i) => (
             <svg
               key={i}
-              className="w-4 h-4 text-yellow-300 ms-1"
+              className="w-4 h-4 text-yellow-300 "
               xmlns="http://www.w3.org/2000/svg"
               fill="currentColor"
               viewBox="0 0 22 20"

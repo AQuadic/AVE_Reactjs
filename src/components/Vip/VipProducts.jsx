@@ -1,7 +1,9 @@
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
-import vipCar from "../../assets/images/vipPage/vipCar.png";
 import { useTranslation } from "react-i18next";
+import vipSlider1 from "@/assets/images/vipPage/vipSlider1.png";
+import vipSlider2 from "@/assets/images/vipPage/vipSlider2.png";
+import vipSlider4 from "@/assets/images/vipPage/vipSlider4.png";
 
 const containerVariants = {
   hidden: {},
@@ -29,13 +31,26 @@ const VipProducts = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
-  const imagesThumbnails = [vipCar, vipCar, vipCar];
+  const models = [
+    {
+      image: vipSlider1,
+      title: "volkswagen ",
+    },
+    {
+      image: vipSlider2,
+      title: "mercedes v class",
+    },
+    {
+      image: vipSlider4,
+      title: "mercedes sprinter",
+    },
+  ];
 
   return (
     <section className="container" ref={ref}>
       <h2 className="flex items-center gap-2">
         <div className="h-10 w-1 bg-vipColor"></div>
-        <span className="text-2xl sm:text-[40px]">{t('models')}</span>
+        <span className="text-2xl sm:text-[40px]">{t("models")}</span>
       </h2>
 
       <motion.div
@@ -44,19 +59,19 @@ const VipProducts = () => {
         initial="hidden"
         animate={isInView ? "visible" : "hidden"}
       >
-        {imagesThumbnails.map((image, idx) => (
+        {models.map((model, idx) => (
           <motion.div
             key={idx}
             className="grey-gradient rounded-lg border border-vipColor"
             variants={itemVariants}
           >
             <img
-              src={image}
+              src={model.image}
               alt="Image"
-              className="relative left-5 -bottom-8"
+              className="relative left-5 -bottom-8 h-[200px] object-contain w-[400px]"
             />
             <p className="text-vipColor text-lg sm:text-2xl bg-black text-center pt-12 pb-16 rounded-b-lg">
-              {t('carModel')}
+              {model.title}
             </p>
           </motion.div>
         ))}

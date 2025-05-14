@@ -1,6 +1,4 @@
-import heroImage from "../../assets/images/vipPage/vipHero.png";
 import heroGradient from "../../assets/images/vipPage/heroGradient.png";
-import vipCar from "../../assets/images/vipPage/vipCar.png";
 import carShadow from "../../assets/images/vipPage/carShadow.png";
 import vipArrowRight from "../../assets/images/vipPage/vipArrowRight.svg";
 import vipArrowLeft from "../../assets/images/vipPage/vipArrowLeft.svg";
@@ -9,9 +7,9 @@ import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { motion, AnimatePresence } from "framer-motion";
 
-import vipSlider1 from '../../assets/images/vipPage/vipSlider1.png'
-import vipSlider2 from '../../assets/images/vipPage/vipSlider2.png'
-import vipSlider4 from '../../assets/images/vipPage/vipSlider4.png'
+import vipSlider1 from "../../assets/images/vipPage/vipSlider1.png";
+import vipSlider2 from "../../assets/images/vipPage/vipSlider2.png";
+import vipSlider4 from "../../assets/images/vipPage/vipSlider4.png";
 
 const VipHero = () => {
   const [selectedIdx, setSelectedIdx] = useState(0);
@@ -32,7 +30,7 @@ const VipHero = () => {
   };
 
   return (
-    <section className="relative z-10">
+    <section className="relative z-10 mb-12">
       <div className="flex gap-5 w-full container justify-end">
         {imagesThumbnails.map((image, idx) => (
           <div
@@ -42,7 +40,7 @@ const VipHero = () => {
           >
             <img
               src={image}
-              className="w-[160px] absolute -right-4 transform ltr:scale-x-[-1]"
+              className="max-w-[150px] h-[70px] absolute -right-4 transform ltr:scale-x-[-1] object-contain"
             />
           </div>
         ))}
@@ -54,7 +52,7 @@ const VipHero = () => {
           className="absolute -top-64 left-0 -z-20"
           alt=""
         />
-        <div className="container flex justify-between max-md:flex-col">
+        <div className="container flex justify-between items-end   max-md:flex-col">
           <div className="flex flex-col gap-[40px] relative z-10">
             <p className="text-2xl sm:text-[32px]">{t("subtitle")}</p>
             <h1 className="font-bold text-4xl sm:text-[56px] text-vipColor">
@@ -67,7 +65,7 @@ const VipHero = () => {
               {t("description")}
             </p>
             <Link
-              className="hover:text-black hover:bg-white mt-4 text-lg font-bold px-7 py-3 border self-start rounded-md border-vipColor"
+              className="hover:text-black hover:bg-white mt-4 text-lg font-bold px-7 py-3 border self-start rounded-md border-vipColor mb-5 sm:mb-12"
               to="/contactUs"
             >
               {t("button")}
@@ -75,7 +73,7 @@ const VipHero = () => {
           </div>
 
           {/* Animated Hero Image */}
-          <div className="relative w-full max-w-[777px] h-full z-20">
+          <div className="relative w-full max-w-[300px] sm:max-w-[777px] -bottom-16  z-20">
             <AnimatePresence mode="wait">
               <motion.img
                 loading="lazy"
@@ -104,14 +102,14 @@ const VipHero = () => {
           </div>
         </div>
 
-        <div className="absolute bottom-0 sm:bottom-20 z-0">
+        <div className="absolute z-0">
           <img
             src={carShadow}
             alt="Car Shadow"
             className="h-[96px] w-screen transform ltr:scale-x-[-1]"
           />
         </div>
-        <div className="flex items-center gap-12 absolute bottom-5 sm:bottom-[100px] w-full container right-1/2 translate-x-1/2 z-[999]">
+        <div className="flex items-center gap-12 absolute -bottom-20  w-full container right-1/2 translate-x-1/2 z-[999]">
           <button onClick={handlePrevImage}>
             <img
               src={vipArrowRight}
