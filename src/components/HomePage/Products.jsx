@@ -5,6 +5,10 @@ import iccreamCard from '../../assets/images/home/iceCreamCard.png'
 import cafeCard from '../../assets/images/home/cafeCard.png'
 import labCard from '../../assets/images/home/labCard.png'
 import officeCard from '../../assets/images/home/officeCard.png'
+import GreenCar from '../../assets/images/Clinics/Car.png'
+import Disabilities from '../../assets/images/HealthCare/disabilities.png'
+
+
 const Products = () => {
   const { t } = useTranslation("home");
 
@@ -12,8 +16,8 @@ const Products = () => {
     { title: t("vip"), path: "/vip", image: ambCard },
     { title: t("ambEquip"), path: "/ambEquipmenet", image: ambCard },
     { title: t("lab"), path: "/lab", image: labCard },
-    { title: t("clinicsHome"), path: "/clinics", image: ambCard },
-    { title: t("disabilities"), path: "/disabilities", image: ambCard },
+    { title: t("clinicsHome"), path: "/clinics", image: GreenCar },
+    { title: t("disabilities"), path: "/disabilities", image: Disabilities },
     { title: t("workshop"), path: "/workshop", image: ambCard },
     { title: t("office"), path: "/office", image: officeCard },
     { title: t("cafe"), path: "/coffee", image: cafeCard },
