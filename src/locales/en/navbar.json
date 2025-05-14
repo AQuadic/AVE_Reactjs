@@ -21,5 +21,22 @@
     "legal": "Legal",
     "terms": "Terms and Conditions",
     "privacy": "privacy policy",
-    "products": "Products"
+    "products": "Products",
+    "care": "Health Care Department",
+    "ambEquipCare": "Ambulances (Intensive Care - Typical)",
+    "clinicCare": "Mobile clinic vehicles",
+    "laboratory": "Mobile health laboratory vehicles",
+    "ramp": "Ramp for wheelchair users",
+    "mobileLaboratories": "Mobile laboratories",
+    "waterLabs": "Mobile water laboratory",
+    "gasLabs": "Mobile gas laboratory",
+    "military": "Mobile military laboratories",
+    "workshops": " Workshops",
+    "workshopsDesc": "Various workshops to handle all maintenance and repairs (car maintenance/home appliances/stations...etc.)",
+    "vet": "Veterinary service vehicles",
+    "rest": "Mobile restaurant vehicles",
+    "coffeShop": "Mobile coffee shop cars",
+    "officeCall": "Mobile Offices + Customer Service",
+    "police": "Police cars",
+    "plans": "Airplanes guidance cars"
 }

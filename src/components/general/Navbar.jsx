@@ -53,25 +53,87 @@ const Navbar = () => {
   }, []);
 
   const servicesDropdown = [
-    { route: "/vip", label: "vip" },
-    { route: "/ambEquipmenet", label: "ambEquip" },
-    { route: "/lab", label: "lab" },
-    { route: "/clinics", label: "clinics" },
-    { route: "/office", label: "office" },
-    { route: "/coffee", label: "cafe" },
-    { route: "/icecream", label: "icecream" },
+    {
+      route: "/healthCare",
+      label: "care",
+      submenu: [
+        { label: t("ambEquipCare"), route: "" },
+        { label: t("clinicCare"), route: "" },
+        { label: t("laboratory"), route: "" },
+        { label: t("ramp"), route: "" },
+      ],
+    },
+    {
+      route: "/ambEquipmenet",
+      label: "mobileLaboratories",
+      submenu: [
+        { label: t("waterLabs"), route: "" },
+        { label: t("gasLabs"), route: "" },
+        { label: t("military"), route: "" },
+      ],
+    },
+    {
+      route: "",
+      label: "workshops",
+      submenu: [
+        { label: t("workshopsDesc"), route: "" },
+      ],
+    },
+    {
+      route: "",
+      label: "vet",
+    },
+    {
+      route: "",
+      label: "rest",
+    },
+    {
+      route: "/coffee",
+      label: "coffeShop",
+    },
+    {
+      route: "/office",
+      label: "officeCall",
+    },
+    {
+      route: "",
+      label: "police",
+    },
+    {
+      route: "",
+      label: "plans",
+    },
   ];
+
+
+  const [hoveredIndex, setHoveredIndex] = useState(null);
+
+  const handleClickOutside = (event) => {
+    if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+      setHoveredIndex(null);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
+
 
   const renderServicesDropdown = (isMobile = true) => (
     <ul
       ref={isMobile ? null : dropdownRef}
       className={`absolute ${isMobile ? "left-2" : "left-[-50px]"} top-6 mt-2 ${isVip ? "bg-[#1E1E1E]" : "bg-white"
-        } rounded-md w-60 z-10 `}
+        } rounded-md w-72 z-10 `}
     >
       {servicesDropdown.map((service, index) => (
         <li
           key={index}
-          className={`px-4 py-2 ${isVip ? "hover:bg-vipColor" : "hover:bg-[#D82022] hover:text-white"
+          className={`relative px-4 py-2 ${isVip
+            ? "hover:bg-vipColor"
+            : "hover:bg-[#D82022] hover:text-white"
             }`}
         >
           <NavLink
@@ -81,6 +143,22 @@ const Navbar = () => {
           >
             {t(service.label)}
           </NavLink>
+
+          {hoveredIndex === index && service.submenu && (
+            <ul className="absolute rtl:right-full ltr:left-full top-0 mt-0 ml-2 w-full py-2 bg-white text-black rounded-md shadow-lg z-20">
+              {service.submenu.map((item, subIndex) => (
+                <li key={subIndex} className="px-3 py-2 hover:bg-gray-200">
+                  <NavLink
+                    to={item.route}
+                    className="block text-sm"
+                    onClick={isMobile ? handleMobileLinkClick : undefined}
+                  >
+                    {item.label}
+                  </NavLink>
+                </li>
+              ))}
+            </ul>
+          )}
         </li>
       ))}
     </ul>
