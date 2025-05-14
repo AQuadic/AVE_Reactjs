@@ -1,6 +1,8 @@
-import AboutUsImg from '@/assets/images/home/aboutUsimg.png'
+// import AboutUsImg from '@/assets/images/home/aboutUsimg.png'
 import { useState } from 'react';
 import { useTranslation } from "react-i18next";
+
+import logo from '../../assets/images/home/ambLogo.png'
 
 const AboutUs = () => {
     const { t } = useTranslation("home");
@@ -11,7 +13,7 @@ const AboutUs = () => {
     };
     return (
         <section className="container flex xl:flex-row flex-col items-center justify-between md:mt-20">
-            <img className='lg:w-[563px] lg:h-[449px] w-[228.6px] h-[182px]' src={AboutUsImg} alt="Image" />
+            <img className='lg:w-[563px] lg:h-[449px] w-[228.6px] h-[182px]' src={logo} alt="Image" />
             <div>
                 <div className='flex items-center gap-4'>
                     <div className="w-2 md:h-[46px] h-7 bg-[#D82022] rounded-sm"></div>

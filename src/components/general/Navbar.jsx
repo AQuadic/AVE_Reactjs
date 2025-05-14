@@ -6,11 +6,14 @@ import { ChevronDown } from "lucide-react";
 import Logo from "../../assets/images/navbarLogo.svg";
 import enLogo from "@/assets/images/home/enLogo.svg";
 
-import VipLogo from "../../assets/images/vipPage/vipLogo.png";
+// import VipLogo from "../../assets/images/vipPage/vipLogo.png";
 import toggle from "../../assets/images/toggle.svg";
 import toggleWhite from "../../assets/images/toggleWhite.svg";
 import sidebarMob from "../../assets/images/sidebarMob.webp";
 import closeIcon from "../../assets/images/closeIcon.svg";
+
+import vipArLogo from '../../assets/images/vipPage/vipArLogo.jpeg'
+import vipEnLogo from '../../assets/images/vipPage/vipEnLogo.png'
 
 import "../../Hooks/i18n";
 import Language from "./Language";
@@ -101,10 +104,20 @@ const Navbar = () => {
             </button>
             <NavLink to="/">
               <img
-                src={isVip ? VipLogo : i18n.language === "ar" ? Logo : enLogo}
+                src={
+                  isVip
+                    ? i18n.language === "ar"
+                      ? vipArLogo
+                      : vipEnLogo
+                    : i18n.language === "ar"
+                      ? Logo
+                      : enLogo
+                }
                 className="md:w-[99px] md:h-[83.97px] w-12 h-12 p-2"
                 alt="Logo"
               />
+
+
             </NavLink>
           </div>
 
