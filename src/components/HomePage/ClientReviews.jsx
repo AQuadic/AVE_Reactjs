@@ -95,13 +95,7 @@ const ClientReviews = () => {
           </button>
         </h2>
         <div className="flex justify-between">
-          <div className="flex items-center gap-4">
-            <img src={clientImg} className="w-20 h-20" alt="Client" />
-            <div>
-              <h2 className="text-[#121212] text-base font-bold">{author}</h2>
-              <p className="text-[#5D5D5D] text-xs">ضابط حربي</p>
-            </div>
-          </div>
+          <div className="flex items-center gap-4"></div>
           <div className="flex items-center">
             <p className="text-[#121212] font-bold ms-2">({rating})</p>
             {[...Array(rating)].map((_, i) => (
@@ -117,7 +111,6 @@ const ClientReviews = () => {
             ))}
           </div>
         </div>
-        <p className="text-[#5D5D5D] text-sm mt-4">{review}</p>
       </div>
     );
   };
