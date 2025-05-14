@@ -30,7 +30,7 @@ const VipHero = () => {
   };
 
   return (
-    <section className="relative z-10 mb-12">
+    <section className="relative z-10 mb-40">
       <div className="flex gap-5 w-full container justify-end">
         {imagesThumbnails.map((image, idx) => (
           <div
