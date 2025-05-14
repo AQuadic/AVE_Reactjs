@@ -29,7 +29,7 @@
     "readLess": "Read Less",
     "aboutDescription": "It is one of the leading Arab companies in the field of automotive equipment. We specialize in supplying healthcare vehicles (ambulances, intensive care) not only in Egypt, but also in the Middle East, in a precise and challenging field. Over more than 20 years, the company has excelled in this field, providing the best types of modern technology in equipping vehicles...",
     "products": "Products",
-    "buttonTitle": "Know more",
+    "buttonTitle": "Show",
     "cardTitle": "Equipped ambulance",
     "services": "Services",
     "replace": "Car replacement",
@@ -40,5 +40,14 @@
     "clinics": "Clinics",
     "description1": "The Arab Automotive Equipment Company (AVE) is a leading manufacturer of ambulances of various types and is the number one company in this field. AVE has achieved this prestigious position through its commitment to providing integrated solutions to meet all customer requirements and ensure continuous improvement. This makes it a leader in the specialized vehicle manufacturing field not only in Egypt but also in the Middle East and Africa.",
     "carModel": "Car model",
-        "reserve": "Book now"
+    "reserve": "Book now",
+    "vip": "VIP",
+    "ambEquip": "Ambulance equipment",
+    "lab": "Lab",
+    "clinicsHome": "Clinics",
+    "disabilities": "People with disabilities",
+    "workshop": "Workshop",
+    "office": "Office",
+    "cafe": "Cafe",
+    "icecream": "Ice Cream"
 }

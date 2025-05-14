@@ -12,6 +12,7 @@ import InstaIcon from "../icons/home/InstaIcon";
 import LinkedInIcon from "../icons/home/LinkedInIcon";
 import TwitterIcon from "../icons/home/TwitterIcon";
 import i18n from "i18next";
+import Tiktok from "../icons/home/Tiktok";
 const Footer = () => {
     const { t } = useTranslation("navbar");
     const isVip = window.location.pathname.includes("/vip");
@@ -41,7 +42,7 @@ const Footer = () => {
                                 <a href="https://wa.me/201009000638" target="_blank" rel="noopener noreferrer" >
                                     <WhatsappIcon />
                                 </a>
-
+                                <Link to='https://www.instagram.com/alarabia_ave'><Tiktok /></Link>
                                 <Link to="">
                                     <YoutubeIcon />
                                 </Link>
