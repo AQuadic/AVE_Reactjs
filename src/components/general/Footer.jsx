@@ -13,6 +13,11 @@ import InstaIcon from "../icons/home/InstaIcon";
 // import TwitterIcon from "../icons/home/TwitterIcon";
 import i18n from "i18next";
 import Tiktok from "../icons/home/Tiktok";
+
+import vipArLogo from '../../assets/images/vipPage/vipArLogo.jpeg'
+import vipEnLogo from '../../assets/images/vipPage/vipEnLogo.png'
+
+
 const Footer = () => {
     const { t } = useTranslation("navbar");
     const isVip = window.location.pathname.includes("/vip");
@@ -28,7 +33,15 @@ const Footer = () => {
                                 className="flex items-center justify-center md:justify-start rtl:flex p-2 max-w-[110px]"
                             >
                                 <img
-                                    src={isVip ? VipLogo : i18n.language === "ar" ? Logo : enLogo}
+                                    src={
+                                        isVip
+                                            ? i18n.language === "ar"
+                                                ? vipArLogo
+                                                : vipEnLogo
+                                            : i18n.language === "ar"
+                                                ? Logo
+                                                : enLogo
+                                    }
                                     alt="Logo"
                                 />
                             </Link>
