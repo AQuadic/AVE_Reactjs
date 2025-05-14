@@ -38,6 +38,10 @@ const Navbar = () => {
     setIsOpen(false);
   };
 
+
+  const handleMouseEnter = (index) => setHoveredIndex(index);
+  const handleMouseLeave = () => setHoveredIndex(null);
+
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
@@ -135,6 +139,8 @@ const Navbar = () => {
             ? "hover:bg-vipColor"
             : "hover:bg-[#D82022] hover:text-white"
             }`}
+          onMouseEnter={() => handleMouseEnter(index)}
+          onMouseLeave={handleMouseLeave}
         >
           <NavLink
             to={service.route}
