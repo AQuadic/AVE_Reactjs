@@ -9,12 +9,16 @@ import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { motion, AnimatePresence } from "framer-motion";
 
+import vipSlider1 from '../../assets/images/vipPage/vipSlider1.png'
+import vipSlider2 from '../../assets/images/vipPage/vipSlider2.png'
+import vipSlider4 from '../../assets/images/vipPage/vipSlider4.png'
+
 const VipHero = () => {
   const [selectedIdx, setSelectedIdx] = useState(0);
   const { t, i18n } = useTranslation("vipPage");
 
-  const imagesThumbnails = [vipCar, vipCar, vipCar];
-  const images = [heroImage, heroImage, heroImage];
+  const imagesThumbnails = [vipSlider1, vipSlider2, vipSlider4];
+  const images = [vipSlider1, vipSlider2, vipSlider4];
 
   const handleNextImage = () => {
     setSelectedIdx((prevIdx) => (prevIdx + 1) % imagesThumbnails.length);
