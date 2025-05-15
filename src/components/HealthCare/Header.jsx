@@ -1,5 +1,5 @@
 import healthCareImg from "@/assets/images/HealthCare/healthCareImg.png";
-import healthCareImgAr from "@/assets/images/HealthCare/arabicHeader.png";
+import healthCareImgAr from "../../assets/images/HealthCare/healthCareImgAr.png";
 import { useTranslation } from "react-i18next";
 const Header = () => {
   const { i18n } = useTranslation();
