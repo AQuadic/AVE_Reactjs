@@ -7,18 +7,20 @@ import labCard from '../../assets/images/home/labCard.png'
 import officeCard from '../../assets/images/home/officeCard.png'
 import GreenCar from '../../assets/images/Clinics/Car.png'
 import Disabilities from '../../assets/images/HealthCare/disabilities.png'
-
+import ambulanceService from '../../assets/images/home/ambulanceService.JPG'
+import mercedes from '../../assets/images/home/mercedes.jpg'
+import workshop from '../../assets/images/home/workshop.jpg'
 
 const Products = () => {
   const { t } = useTranslation("home");
 
   const productsData = [
-    { title: t("vip"), path: "/vip", image: ambCard },
-    { title: t("ambEquip"), path: "/ambEquipmenet", image: ambCard },
+    { title: t("vip"), path: "/vip", image: mercedes },
+    { title: t("ambEquip"), path: "/ambEquipmenet", image: ambulanceService },
     { title: t("lab"), path: "/lab", image: labCard },
     { title: t("clinicsHome"), path: "/clinics", image: GreenCar },
     { title: t("disabilities"), path: "/disabilities", image: Disabilities },
-    { title: t("workshop"), path: "/workshop", image: ambCard },
+    { title: t("workshop"), path: "/workshop", image: workshop },
     { title: t("office"), path: "/office", image: officeCard },
     { title: t("cafe"), path: "/coffee", image: cafeCard },
     { title: t("icecream"), path: "/icecream", image: iccreamCard },
