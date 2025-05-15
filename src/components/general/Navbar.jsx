@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 import { ChevronDown } from "lucide-react";
 
 import Logo from "../../assets/images/navbarLogo.svg";
-import enLogo from "@/assets/images/home/enLogo.svg";
+import enLogo from "@/assets/images/mainEnglishLogo.png";
 
 // import VipLogo from "../../assets/images/vipPage/vipLogo.png";
 import toggle from "../../assets/images/toggle.svg";
@@ -196,8 +196,8 @@ const Navbar = () => {
                 className={`${
                   isVip
                     ? "md:w-[150px] md:h-[93.97px]"
-                    : "md:w-[99px] md:h-[83.97px]"
-                }   p-2`}
+                    : "md:w-[150px] md:h-[83.97px]"
+                }   p-2 object-fill`}
                 alt="Logo"
               />
             </NavLink>
