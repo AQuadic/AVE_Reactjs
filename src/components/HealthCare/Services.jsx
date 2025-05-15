@@ -51,7 +51,7 @@ const Services = () => {
           <div
             key={service.id}
             onClick={() => handleServiceClick(service.id)}
-            className={`cursor-pointer border border-[#CBCBCB] rounded-3xl flex flex-col items-center pt-4 hover:bg-[#F1F1F1] lg:h-[362px] ${expandedService === service.id ? "bg-[#F1F1F1]" : ""}`}
+            className={`cursor-pointer border border-[#CBCBCB] rounded-3xl flex flex-col items-center pt-4 hover:bg-[#F1F1F1] lg:h-full ${expandedService === service.id ? "bg-[#F1F1F1]" : ""}`}
           >
             <img
               src={service.image}
