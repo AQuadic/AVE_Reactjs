@@ -18,10 +18,10 @@ const HomePage = () => {
       <Clients />
       <ClientReviews />
       <OurCertificates />
-      {/* <HowWeWork />
+      {/* <HowWeWork  />
       <GetApp /> */}
     </div>
-  )
+  );
 };
 
 export default HomePage;
