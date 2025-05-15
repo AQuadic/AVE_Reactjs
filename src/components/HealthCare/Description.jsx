@@ -1,5 +1,6 @@
 
-import Standard from '../../assets/images/HealthCare/Standard.png'
+import Standard1 from '../../assets/images/HealthCare/Standard1.jpg'
+// import Standard1 from '../../assets/images/HealthCare/Standard1.png'
 import ICU from '../../assets/images/HealthCare/ICU.png'
 import { useTranslation } from "react-i18next";
 const Description = () => {
@@ -13,7 +14,7 @@ const Description = () => {
                         <p className='text-[#1E1E1E] md:text-[40px] text-lg font-bold leading-[40px] md:mt-9 mt-2'>{t('icu')}</p>
                     </div>
                     <div className='flex flex-col items-center'>
-                        <img src={Standard} className='md:w-[200px] w-[120px] md:h-[200px] h-[120px] rounded-full' alt="Image" />
+                        <img src={Standard1} className='md:w-[200px] w-[120px] md:h-[200px] h-[120px] rounded-full' alt="Image" />
                         <p className='text-[#1E1E1E] md:text-[40px] text-lg font-bold leading-[40px] md:mt-9 mt-2'>{t('standard')}</p>
                     </div>
                 </div>
