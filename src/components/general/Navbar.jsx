@@ -197,7 +197,7 @@ const Navbar = () => {
                   isVip
                     ? "md:w-[150px] md:h-[93.97px]"
                     : "md:w-[99px] md:h-[83.97px]"
-                }  w-12 h-12 p-2`}
+                }   p-2`}
                 alt="Logo"
               />
             </NavLink>
