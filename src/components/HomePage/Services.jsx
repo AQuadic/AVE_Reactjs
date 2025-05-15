@@ -92,10 +92,10 @@ const Services = () => {
       <div className="mt-14 grid grid-cols-2  lg:grid-cols-3 gap-6">
         {services.map(({ id, image, title, iconDesktop, iconMobile }) => (
           <Link to="contactUs" key={id}>
-            <div className="lg:w-[588px] w-[163px] lg:h-[584px] h-[198px] border border-[#CBCBCB] rounded-3xl flex flex-col items-center pt-4">
+            <div className="w-full  border border-[#CBCBCB] rounded-3xl flex flex-col items-center pt-4">
               <img
                 src={image}
-                className="lg:w-[556px] lg:h-[350px] w-[147px] h-[124px]"
+                className="lg:w-[556px] lg:h-[350px] w-[147px] object-cover"
                 alt="Service"
               />
               <div className="lg:flex hidden lg:w-[100px] lg:h-[100px] w-10 h-10 bg-[#FFFFFF] rounded-full mt-[-10%] items-center justify-center">
