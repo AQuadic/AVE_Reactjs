@@ -1,6 +1,8 @@
 import { useTranslation } from "react-i18next";
-import heroImage from "../../assets/images/home/heroImage.png";
+// import heroImage from "../../assets/images/home/heroImage.png";
 import { Link } from "react-router";
+
+import newHero from '../../assets/images/home/newHero.png'
 
 const Header = () => {
   const { t } = useTranslation("home");
@@ -29,7 +31,7 @@ const Header = () => {
             </Link>
           </div>
         </section>
-        <img src={heroImage} alt="hero" />
+        <img src={newHero} alt="hero" />
       </div>
     </header>
   );
