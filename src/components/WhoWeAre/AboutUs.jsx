@@ -1,5 +1,7 @@
-import aboutusAm from '../../assets/images/aboutUsAmb.webp'
+// import aboutusAm from '../../assets/images/aboutUsAmb.webp'
 import { useTranslation } from "react-i18next";
+import logo from '../../assets/images/home/ambLogo.png'
+
 const AboutUs = () => {
     const { t } = useTranslation("whoWeAre");
     return (
@@ -13,7 +15,7 @@ const AboutUs = () => {
                 <p className="md:w-[683px] text-[#505050] md:text-base text-sm">{t('fPara')}</p>
                 <p className="md:w-[683px] text-[#505050] md:text-base text-sm mt-8">{t('sPara')}</p>
             </div>
-            <img src={aboutusAm} alt="Ambulance" />
+            <img className='lg:w-[563px] lg:h-[449px] w-[228.6px] h-[182px]' src={logo} alt="Ambulance" />
         </section>
     )
 }

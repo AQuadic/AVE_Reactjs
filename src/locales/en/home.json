@@ -52,5 +52,14 @@
     "icecream": "Ice Cream",
     "models": "Models",
     "icu": "ICU",
-    "standard": "Standard"
+    "standard": "Standard",
+    "care": "Health Care Department",
+    "mobileLaboratories": "Mobile laboratories",
+    "workshops": " Workshops",
+    "vet": "Veterinary service vehicles",
+    "rest": "Mobile restaurant vehicles",
+    "coffeShop": "Mobile coffee shop cars",
+    "officeCall": "Mobile Offices + Customer Service",
+    "police": "Police cars",
+    "plans": "Airplanes guidance cars"
 }
