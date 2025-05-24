@@ -10,8 +10,8 @@ const Faqs = () => {
     };
 
     return (
-        <section className="container mx-auto lg:my-[120px] my-6 px-3 lg:px-0">
-            <div className='flex items-center gap-4'>
+        <section className="container mx-auto lg:my-[120px] my-6 px-3 lg:px-0 ">
+              <div className='flex items-center gap-4'>
                 <div className='w-1 md:h-[46px] h-7 bg-[#D82022] rounded-sm'></div>
                 <h1 className="font-bold md:text-[40px] text-xl text-[#1E1E1E]">{t('questions')}</h1>
             </div>
