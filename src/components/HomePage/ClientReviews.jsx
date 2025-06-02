@@ -1,9 +1,9 @@
-import Slider from "react-slick";
-import { useTranslation } from "react-i18next";
 import clientImg from "@/assets/images/clientImg.webp";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick.css";
 
 const ClientReviews = () => {
   const { t } = useTranslation("home");
@@ -95,6 +95,7 @@ const ClientReviews = () => {
           </button>
         </h2>
         <div className="flex justify-between">
+          <p>{author}</p>
           <div className="flex items-center gap-4"></div>
           <div className="flex items-center">
             <p className="text-[#121212] font-bold ms-2">({rating})</p>
@@ -117,7 +118,7 @@ const ClientReviews = () => {
 
   return (
     <section className="container mx-auto md:flex hidden flex-col  md:my-[88px] my-10 px-3 lg:px-0">
-      <div className="flex items-center justify-center md:justify-start gap-4 mb-10">
+      <div className="flex items-center justify-center gap-4 mb-10 md:justify-start">
         <div className="w-1 md:h-[46px] h-7 bg-[#D82022] rounded-sm"></div>
         <h1 className="font-bold md:text-[40px] text-xl text-[#1E1E1E]">
           {t("reviews")} <span>{t("client")}</span>
