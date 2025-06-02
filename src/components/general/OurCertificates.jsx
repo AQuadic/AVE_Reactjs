@@ -1,8 +1,8 @@
-import Slider from "react-slick";
 import { useTranslation } from "react-i18next";
-import certificates from "../../assets/images/certificates.webp";
-import "slick-carousel/slick/slick.css";
+import Slider from "react-slick";
 import "slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick.css";
+import certificates from "../../assets/images/certificates.webp";
 
 const OurCertificates = () => {
   const { t } = useTranslation();
@@ -12,7 +12,7 @@ const OurCertificates = () => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 2.9,
+    slidesToShow: 2.7,
     slidesToScroll: 1,
     arrows: false,
     autoplay: true,
@@ -47,8 +47,8 @@ const OurCertificates = () => {
     ],
   };
   return (
-    <section className="container mx-auto mt-5 px-4 pb-14">
-      <div className="flex items-center  md:justify-start gap-4 mb-8">
+    <section className="container px-4 mx-auto mt-5 pb-14">
+      <div className="flex items-center gap-4 mb-8 md:justify-start">
         <div className="w-1 md:h-[46px] h-7 bg-[#D82022] rounded-sm"></div>
         <h1 className="font-bold md:text-[40px] text-xl text-[#1E1E1E]">
           {t("ourCertificates")}
