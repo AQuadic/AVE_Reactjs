@@ -11,7 +11,7 @@ const OpinionCard = ({ isGolden }) => {
   };
   return (
     <div
-      className={`w-full max-w-[600px] m-5 p-6 ${
+      className={`  m-5 p-6 ${
         isGolden ? "yellow-gradient text-white" : "bg-white text-black"
       } rounded-xl`}
     >
