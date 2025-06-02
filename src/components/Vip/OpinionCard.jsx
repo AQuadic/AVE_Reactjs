@@ -15,7 +15,7 @@ const OpinionCard = ({ isGolden }) => {
         isGolden ? "yellow-gradient text-white" : "bg-white text-black"
       } rounded-xl`}
     >
-      <p className="text-[#505050] lg:text-2xl text-base lg:font-bold font-normal md:w-[570px] mt-4">
+      <p className="text-[#505050] lg:text-2xl text-base lg:font-bold font-normal  mt-4">
         {t("headTitle")}
         {showMore && <span> {t("headTitle")}</span>}
         <span
