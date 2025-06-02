@@ -1,6 +1,5 @@
 import Logo from "../../assets/images/navbarLogo.svg";
 import enLogo from "@/assets/images/home/enLogo.svg";
-import VipLogo from "../../assets/images/vipPage/vipLogo.png";
 
 import check from "../../assets/images/check.svg";
 import { Link } from "react-router";
@@ -21,10 +20,12 @@ const Footer = () => {
   const { t } = useTranslation("navbar");
   const isVip = window.location.pathname.includes("/vip");
   console.log(isVip);
+  ;
+
   return (
     <div className="relative">
       <footer className="bg-[#1E1E1E]">
-        <div className="container w-full max-w-screen-2xl p-4 py-6 lg:py-8">
+        <div className="container w-full p-4 py-6 max-w-screen-2xl lg:py-8">
           <div className="xl:flex xl:gap-32 lg:gap-20">
             <div className="mb-6 md:mb-0">
               <Link
@@ -54,7 +55,7 @@ const Footer = () => {
                   Zone - 6th of October - Giza
                 </p>
               </div>
-              <div className=" text-base leading-6 text-white md:text-start text-center mt-4 flex flex-col gap-1">
+              <div className="flex flex-col gap-1 mt-4 text-base leading-6 text-center text-white  md:text-start">
                 <a
                   href="https://wa.me/20109000638"
                   target="_blank"
@@ -99,19 +100,19 @@ const Footer = () => {
                                 </Link> */}
               </div>
             </div>
-            <div className="flex md:flex-row flex-col rtl:lg:gap-20 ltr:lg:gap-12 md:gap-5 mt-5 xl:mt-0">
+            <div className="flex flex-col mt-5 md:flex-row rtl:lg:gap-20 ltr:lg:gap-12 md:gap-5 xl:mt-0">
               <div className="">
-                <h2 className="text-2xl font-semibold text-white lg:text-start text-center">
+                <h2 className="text-2xl font-semibold text-center text-white lg:text-start">
                   {t("services")}
                 </h2>
                 <div className="w-6 h-1 bg-[#ED1C24] rounded-sm mt-4 mb-2 mx-auto lg:mx-0"></div>
-                <ul className="text-white font-normal text-base flex md:flex-row flex-col  justify-center gap-3">
-                  <div className="order-2 md:order-2 flex flex-col items-center md:items-start">
+                <ul className="flex flex-col justify-center gap-3 text-base font-normal text-white md:flex-row">
+                  <div className="flex flex-col items-center order-2 md:order-2 md:items-start">
                     <li className="mb-4 flex items-center gap-[9px]">
                       <img
                         src={check}
                         alt="Check"
-                        className="md:block hidden"
+                        className="hidden md:block"
                       />
                       <Link to="/">{t("disabilities")}</Link>
                     </li>
@@ -119,29 +120,29 @@ const Footer = () => {
                       <img
                         src={check}
                         alt="Check"
-                        className="md:block hidden"
+                        className="hidden md:block"
                       />
                       <Link to="/">{t("clinics")}</Link>
                     </li>
                     {/* <li className="mb-4 flex items-center gap-[9px]">
-                                            <img src={check} alt="Check" className='md:block hidden' />
+                                            <img src={check} alt="Check" className='hidden md:block' />
                                             <Link to='/' >{t('workshop')}</Link>
                                         </li> */}
                     <li className="mb-4 flex items-center gap-[9px]">
                       <img
                         src={check}
                         alt="Check"
-                        className="md:block hidden"
+                        className="hidden md:block"
                       />
                       <Link to="/">{t("cafe")}</Link>
                     </li>
                   </div>
-                  <div className="order-1 md:order-1 flex flex-col items-center md:items-start">
+                  <div className="flex flex-col items-center order-1 md:order-1 md:items-start">
                     <li className="mb-4 flex items-center gap-[9px]">
                       <img
                         src={check}
                         alt="Check"
-                        className="md:block hidden"
+                        className="hidden md:block"
                       />
                       <Link to="/">{t("lab")}</Link>
                     </li>
@@ -149,7 +150,7 @@ const Footer = () => {
                       <img
                         src={check}
                         alt="Check"
-                        className="md:block hidden"
+                        className="hidden md:block"
                       />
                       <Link to="/ambEquipmenet">{t("ambEquip")}</Link>
                     </li>
@@ -157,7 +158,7 @@ const Footer = () => {
                       <img
                         src={check}
                         alt="Check"
-                        className="md:block hidden"
+                        className="hidden md:block"
                       />
                       <Link to="/vip">{t("vip")}</Link>
                     </li>
@@ -165,7 +166,7 @@ const Footer = () => {
                       <img
                         src={check}
                         alt="Check"
-                        className="md:block hidden"
+                        className="hidden md:block"
                       />
                       <Link to="/">{t("workshop")}</Link>
                     </li>
@@ -177,7 +178,7 @@ const Footer = () => {
                   {t("company")}
                 </h2>
                 <div className="w-6 h-1 bg-[#ED1C24] rounded-sm mt-4 mb-2"></div>
-                <ul className="text-white font-normal text-base flex flex-col  items-center">
+                <ul className="flex flex-col items-center text-base font-normal text-white">
                   <li className="mb-4 flex items-center gap-[9px]">
                     <Link to="/whoWeAre">{t("whoWeAre")}</Link>
                   </li>
@@ -194,7 +195,7 @@ const Footer = () => {
                   {t("legal")}
                 </h2>
                 <div className="w-6 h-1 bg-[#ED1C24] rounded-sm mt-4 mb-2"></div>
-                <ul className="text-white font-normal text-base flex flex-col items-center">
+                <ul className="flex flex-col items-center text-base font-normal text-white">
                   <li className="mb-4 flex items-center gap-[9px]">
                     <Link to="/terms">{t("terms")}</Link>
                   </li>
