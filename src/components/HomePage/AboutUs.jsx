@@ -25,8 +25,8 @@ const AboutUs = () => {
             {t("aboutus")}
           </h1>
         </div>
-        <p className="text-[#1E1E1E] lg:text-[32px] text-xl font-bold mt-4">
-          &quot; {t("aboutTitle")}( <span className="text-[#D82022]">AVE</span>
+        <p className="text-[#1E1E1E] lg:text-[28px] text-xl font-bold mt-4">
+          &quot; {t("aboutTitle")} ( <span className="text-[#D82022]">AVE</span>
           )&quot;
         </p>
         <p className="text-[#505050] lg:text-2xl text-base lg:font-bold font-normal md:w-[570px] mt-4">
