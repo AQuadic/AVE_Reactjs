@@ -1,10 +1,10 @@
-import Slider from "react-slick";
-import certificates from "../../assets/images/certificates.webp";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import OpinionCard from "@/components/Vip/OpinionCard.jsx";
 import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick.css";
+import certificates from "../../assets/images/certificates.webp";
 
 const VipOpinions = () => {
   const { t } = useTranslation("home");
@@ -34,18 +34,19 @@ const VipOpinions = () => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 1,
+    slidesToShow: 2,
     slidesToScroll: 1,
     arrows: false,
     autoplay: true,
     autoplaySpeed: 3000,
-    centerMode: true,
-    centerPadding: "25%",
+    centerMode: false, // turn off to avoid cropping
+    centerPadding: "0", // no extra padding
+
     responsive: [
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2, // still show 2 on medium screens
           centerMode: false,
           centerPadding: "0",
         },
@@ -53,7 +54,7 @@ const VipOpinions = () => {
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 1, // show only 1 on smaller screens
           centerMode: false,
           centerPadding: "0",
         },
@@ -61,7 +62,7 @@ const VipOpinions = () => {
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 1, // same for mobile
           centerMode: false,
           centerPadding: "0",
         },
@@ -70,9 +71,9 @@ const VipOpinions = () => {
   };
 
   return (
-    <section className="container mx-auto mt-5 px-4 pb-14 py-12">
+    <section className="container px-4 py-12 mx-auto mt-5 pb-14">
       <h2 className="flex items-center gap-2">
-        <div className="h-10 w-1 bg-vipColor"></div>
+        <div className="w-1 h-10 bg-vipColor"></div>
         <span className="text-2xl sm:text-[40px] py-12">
           {" "}
           {t("reviews")} <span>{t("client")}</span>
